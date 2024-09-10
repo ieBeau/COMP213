@@ -1,1 +1,1 @@
-# COMP213 Week 1
+# COMP213 Course Assignments
