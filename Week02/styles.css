@@ -1,0 +1,18 @@
+/* styles.css */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.image-container {
+    display: flex; 
+    flex-direction: row;
+    width: 100vh;
+}
+
+.image-chad {
+    position: absolute;
+    margin-left: 90vh;
+}
