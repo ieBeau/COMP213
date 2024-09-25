@@ -51,6 +51,30 @@ footer {
     margin-right: 25px;
 }
 
+.website-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.website-name {
+    align-self: center;
+    margin-left: 10px;
+}
+
+.image-container {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+}
+
+.website-titles {
+    text-align: center;
+}
+
 a { 
     color: inherit; 
     text-decoration: none;
@@ -58,6 +82,11 @@ a {
 
 ul {
     list-style: none;
+    /* margin-top: 50px; */
+    /* padding: 50px; */
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
 }
 
 li {
