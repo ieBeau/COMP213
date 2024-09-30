@@ -8,6 +8,7 @@ html, body {
 } 
 
 body {
+    display: flex;
     margin: 0;
     font-family: Verdana; 
     color:rgb(255, 255, 255); 
@@ -15,6 +16,8 @@ body {
 }
 
 header {
+    display: flex;
+    flex-direction: column;
     align-self: center;
 }
 
