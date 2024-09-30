@@ -55,6 +55,7 @@ footer {
 }
 
 .citation {
+    width: 500;
     color: rgb(142, 142, 142);
     font-weight: normal;
     margin: 5px 0px 0px 0px;
