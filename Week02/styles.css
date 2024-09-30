@@ -8,9 +8,6 @@ html, body {
 } 
 
 body {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
     margin: 0;
     font-family: Verdana; 
     color:rgb(255, 255, 255); 
@@ -27,12 +24,11 @@ main {
 }
 
 footer {
-    height: 35px;
     background-color: rgb(19, 9, 0);
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     margin-top: auto;
+    flex-direction: column;
 }
 
 .title {
@@ -42,7 +38,7 @@ footer {
 
 .intro {
     columns: 2;
-    column-gap: 20px;
+    column-gap: 50px;
     line-height: 25px;
     margin: 30px 0px 50px 0px;
 }
@@ -50,12 +46,12 @@ footer {
 /* Banner */
 
 .container {
-    height: 300px; 
+    height: 225px; 
     overflow: hidden;
 }
 
 .container img {
-    margin: -50px 0px 0px 0px
+    margin: -75px 0px 0px 0px
 }
 
 .citation {
@@ -63,6 +59,8 @@ footer {
     font-size: smaller;
     margin: 5px 0px 0px 0px;
 }
+
+/* Divider */
 
 .hor-ruler {
     border: 0;
@@ -74,7 +72,13 @@ footer {
 /* Footer */
 
 .copyright {
-    margin-right: 25px;
+    font-size: small;
+    margin: 10px 25px 0px 0px;
+}
+
+.credits {
+    font-size: x-small;
+    margin: 10px 25px 10px 0px;
 }
 
 /* Website List Container */
@@ -92,7 +96,7 @@ footer {
 .image-container {
     display: flex;
     height: 100px;
-    width: 100px;
+    aspect-ratio: 1;
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
     justify-content: center;
@@ -123,7 +127,7 @@ li {
     font-weight: 700;
     vertical-align: bottom;
     transition: .25s ease-in-out;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 li:hover {
