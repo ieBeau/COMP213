@@ -7,12 +7,16 @@ html, body {
     margin: auto;
 } 
 
+html {
+    background-color: rgb(25, 12, 0);
+}
+
 body {
     display: flex;
     margin: 0;
     font-family: Verdana; 
     color:rgb(255, 255, 255); 
-    background-color:rgb(8, 26, 0);
+    background-color:rgb(12, 39, 0);
 }
 
 header {
@@ -27,7 +31,7 @@ main {
 }
 
 footer {
-    background-color: rgb(19, 9, 0);
+    background-color: rgb(25, 12, 0);
     display: flex;
     align-items: center;
     margin-top: auto;
