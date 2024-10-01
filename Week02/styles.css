@@ -49,6 +49,10 @@ footer {
 /* Banner */
 
 .container {
+    width: 750px;
+}
+
+.banner-container {
     height: 225px; 
     overflow: hidden;
 }
@@ -58,7 +62,6 @@ footer {
 }
 
 .citation {
-    width: 550px;
     color: rgb(142, 142, 142);
     font-size: small;
     margin: 5px 0px 0px 0px;
