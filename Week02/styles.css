@@ -50,6 +50,8 @@ footer {
 
 .container {
     width: 750px;
+    display: flex;
+    flex-direction: column;
 }
 
 .banner-container {
@@ -63,7 +65,7 @@ footer {
 
 .citation {
     color: rgb(142, 142, 142);
-    font-size: small;
+    font-size: x-small;
     margin: 5px 0px 0px 0px;
 }
 
