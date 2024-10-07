@@ -1,0 +1,20 @@
+/* details.css */
+
+header .banner {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+header .containerTitle {
+    text-align: center;
+}
+
+.buttonReturn {
+    position: absolute;
+    display: flex;
+    align-self: flex-end;
+    margin-right: 20px;
+    color: rgb(68, 68, 68);
+}
