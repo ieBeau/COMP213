@@ -26,7 +26,6 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     background-color:rgb(225, 225, 225);
     color: rgb(68, 68, 68);
@@ -55,17 +54,21 @@ table {
     margin-top: 25px;
 }
 
-.tableLocations {
-    margin: 0;
+.tableSelection {
+    font-size: smaller; 
+    width: auto; 
+    margin: 50px 0 0 0;
+    cursor: pointer;
 }
 
 .containerLocations {
-    width: 680px;
+    width: 100%;
     justify-content: flex-end;
 }
 
 .containerLoc {
-    margin: 0 20px 0 auto;
+    align-self: flex-end;
+    margin: 0 20px 0 0;
 }
 
 .containerLoc .title {
@@ -84,8 +87,21 @@ table {
     width: 100%;
 }
 
+.containerSelectionDetail {
+    width: 100%;
+}
+
+.selectionDetail {
+    margin-Top: 50px;
+}
+
 .containerMap {
     width: 300px;
+}
+
+.imgMap {
+    border-radius: 15px;
+    margin: 75px 0 0 0;
 }
 
 .imgSmall {
@@ -137,7 +153,13 @@ nav {
 
 .copyright {
     font-size: small;
-    margin: 10px 0px 10px 0px;
+    margin: 25px 0px 5px 0px;
+    color: rgb(68, 68, 68);
+}
+
+.credits {
+    font-size: small;
+    margin: 0px 0px 15px 0px;
     color: rgb(68, 68, 68);
 }
 
@@ -147,8 +169,43 @@ nav {
     text-align: center;
 }
 
+.containerSelection {
+    color: white;
+    background-color: rgb(125, 125, 125);
+    text-align: center;
+    margin: 0;
+}
+
+.containerSelected {
+    color: white;
+    background-color: rgb(168, 0, 0);
+    text-align: center;
+    margin: 0;
+}
+
+.selectionKnife {
+    padding: 0 10px 0 10px;
+    border: 1px solid rgb(68, 68, 68);
+    white-space: nowrap;
+}
+
+.containerSelection:hover {
+    background-color: rgb(80, 80, 80);
+}
+
+.containerSelected:hover {
+    background-color: rgb(80, 80, 80);
+}
+
+.selectionTitle {
+    color: white;
+    background-color: rgb(68, 68, 68);
+    border: 1px solid rgb(40, 40, 40);
+}
+
 .containerNav {
-    display: flex;
+    text-align: right;
+    width: 100%;
 }
 
 .itemSummary {
@@ -161,18 +218,19 @@ nav {
     border-radius: 15px; 
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     transition: .25s ease-in-out;
+    cursor: pointer;
 }
 
 .buttonPurchase:hover {
     color: hsl(0, 0%, 100%);
-    background-color: hsl(121, 100%, 15%);
+    background-color: rgb(28, 17, 0);
 }
 
 
 .buttonPurchase:hover::before {
     border-width: 0;
-    background-color: hsl(121, 100%, 15%);
-    box-shadow: 0 0 .5rem .1rem hsla(121, 100%, 15%, 1);
+    background-color: rgb(28, 17, 0);
+    box-shadow: 0 0 .5rem .1rem rgb(28, 17, 0, 1);
     animation: none;
 }
 
