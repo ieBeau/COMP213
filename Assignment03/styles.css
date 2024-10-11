@@ -12,7 +12,6 @@ body {
     display: flex;
     font-family: Verdana; 
     font-size: large;
-    /*color:rgb(255, 255, 255); */
     background-color:rgb(225, 225, 225);
 }
 
@@ -31,13 +30,17 @@ main {
     color: rgb(68, 68, 68);
     width: 100%;
     height: 100%;
+    margin-bottom: 20px;
     animation: fade 4s;
 }
 
 footer {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
+    margin: 50px 0 0 0;
+    height: 75px;
 }
 
 table {
@@ -57,13 +60,14 @@ table {
 .tableSelection {
     font-size: smaller; 
     width: auto; 
-    margin: 50px 0 0 0;
+    margin: 0;
+    margin: 20px 0 0 0;
     cursor: pointer;
 }
 
 .containerLocations {
-    width: 100%;
-    justify-content: flex-end;
+    /* width: 100%; */
+    /* justify-content: flex-end; */
 }
 
 .containerLoc {
@@ -82,8 +86,8 @@ table {
 }
 
 .bodyLocations {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     width: 100%;
 }
 
@@ -92,7 +96,8 @@ table {
 }
 
 .selectionDetail {
-    margin-Top: 50px;
+    margin: 0;
+    padding: 0 30px 0 30px;
 }
 
 .containerMap {
@@ -101,16 +106,22 @@ table {
 
 .imgMap {
     border-radius: 15px;
-    margin: 75px 0 0 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin: 50px 0 0 0;
+}
+
+.highlight {
+    cursor: pointer;
+    /* border: 1px solid red; */
+    /* position: absolute; */
+    background-color: aqua;
 }
 
 .imgSmall {
     border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.imgLarge {
-    border-radius: 25px;
-}
 
 .viewImageText {
     font-size: small; 
@@ -209,7 +220,7 @@ nav {
 }
 
 .itemSummary {
-    margin: 10px;
+    margin: 0 10px 10px 10px;
 }
 
 .buttonPurchase {

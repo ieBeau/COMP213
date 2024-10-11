@@ -1,5 +1,10 @@
 /* details.css */
 
+.imgLarge {
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
 header .banner {
     display: flex; 
     flex-direction: row; 

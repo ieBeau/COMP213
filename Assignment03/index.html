@@ -8,7 +8,7 @@
     </head>
     <body>
         <main>
-            <table class="tableMain">
+            <table class="tableMain" border="1">
                 <tbody>
                     <tr>
                         <td>
@@ -36,7 +36,7 @@
                         <td colspan="3"></td>
                     </tr>
                     <tr>
-                        <td class="container" rowspan="2">
+                        <td class="container" rowspan="2" style="vertical-align: top;">
                             <img class="imgSmall" src="./assets/knife.webp" alt="Hazaki Gyuto - Damascus" width="200px" height="200px">
                             <a class="viewImageText" href="./details.html">View Larger Picture</a>
                         </td>
@@ -96,7 +96,7 @@
                     </tr>
                     <tr>
                         <td colspan="3" class="containerLocations">
-                            <table>
+                            <table border="1">
                                 <tbody class="bodyLocations">
                                     <tr class="containerLoc">
                                         <td class="title">
@@ -111,6 +111,21 @@
                                         </td>
                                         <td>
                                             <button class="buttonPurchase" onclick="window.open('https://www.eastcityknife.co/', '_blank')">Purchase</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="containerLoc">
+                                        <td class="title">
+                                            <p>Quebec</p>
+                                        </td>
+                                        <td class="address">
+                                            <p>
+                                                <strong>Tzanet</strong><br/>
+                                                1375 Rue de Louvain O<br/>
+                                                Montréal, QC
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <button class="buttonPurchase" onclick="window.open('https://www.tzanet.com/en', '_blank')">Purchase</button>
                                         </td>
                                     </tr>
                                     <tr class="containerLoc">
@@ -147,7 +162,13 @@
                             </table>
                         </td>
                         <td class="containerMap">
-                            <img class="imgMap" src="./assets/map.png" alt="Map of Canada" width="300px" height="300px">
+                            <img class="imgMap" src="./assets/map.png" alt="Map of Canada" usemap="#canadaMap" width="300px" height="300px"/>
+                            <map name="canadaMap">
+                                <area shape="circle" coords="65,185,15" alt="Ontario" href="https://www.eastcityknife.co/" target="_blank">
+                                <area shape="circle" coords="130,160,15" alt="Quebec" href="https://www.tzanet.com/en" target="_blank">
+                                <area shape="circle" coords="160,120,15" alt="Quebec" href="https://www.tzanet.com/en" target="_blank">
+                                <area shape="circle" coords="238,120,15" alt="New Brunswick" href="https://www.knifeandrider.ca/shop/kitchen-knives/5" target="_blank">
+                            </map>
                         </td>
                     </tr>
                 </tbody>
