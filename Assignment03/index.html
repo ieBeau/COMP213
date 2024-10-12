@@ -8,7 +8,7 @@
     </head>
     <body>
         <main>
-            <table class="tableMain" border="1">
+            <table class="tableMain">
                 <tbody>
                     <tr>
                         <td>
@@ -36,9 +36,18 @@
                         <td colspan="3"></td>
                     </tr>
                     <tr>
-                        <td class="container" rowspan="2" style="vertical-align: top;">
-                            <img class="imgSmall" src="./assets/knife.webp" alt="Hazaki Gyuto - Damascus" width="200px" height="200px">
+                        
+                        <td class="container" rowspan="3" style="vertical-align: top;">
+                            <div class="imageContainer">
+                                <img class="imgSmall" src="./assets/knife.webp" alt="Hazaki Gyuto - Damascus" width="200px" height="200px">
+                            </div>
                             <a class="viewImageText" href="./details.html">View Larger Picture</a>
+                            <div class="imageContainer-sample">
+                                <img class="imgSmall-sample2" src="./assets/knife-2.webp" alt="Hazaki Gyuto - Damascus" width="200px" height="200px">
+                            </div>
+                            <div class="imageContainer-sample">
+                                <img class="imgSmall-sample3" src="./assets/knife-3.webp" alt="Hazaki Gyuto - Damascus" width="200px" height="200px">
+                            </div>
                         </td>
                         <td colspan="3">
                             <p class="itemSummary">
@@ -95,8 +104,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="3" class="containerLocations">
-                            <table border="1">
+                        <td colspan="2" class="containerLocations">
+                            <table class="tableLocations">
                                 <tbody class="bodyLocations">
                                     <tr class="containerLoc">
                                         <td class="title">
@@ -180,5 +189,26 @@
                 <a href="https://hazakiknives.com/"  target="_blank">Hazaki</a>
             </h6>
         </footer>
+
+        <script>
+            const zoomContainer = document.querySelector('.zoom-container');
+            const zoomImage = document.querySelector('#zoom-image');
+
+            zoomContainer.addEventListener('mousemove', (e) => {
+            const rect = zoomContainer.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            const xPercent = (x / zoomContainer.offsetWidth) * 100;
+            const yPercent = (y / zoomContainer.offsetHeight) * 100;
+
+            zoomImage.style.transformOrigin = `${xPercent}% ${yPercent}%`;
+            zoomImage.style.transform = 'scale(2)'; // Adjust the zoom level by changing the scale value
+            });
+
+            zoomContainer.addEventListener('mouseleave', () => {
+            zoomImage.style.transform = 'scale(1)';
+            });
+        </script>
     </body>
 </html>
