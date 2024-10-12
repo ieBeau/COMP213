@@ -61,7 +61,7 @@ tbody {
     font-size: smaller; 
     width: auto; 
     margin: 0;
-    margin: 30px 0 0 0;
+    margin: 30px 10px 0 0;
     cursor: pointer;
 }
 
@@ -150,7 +150,7 @@ tbody {
     height: 275px;
     border-radius: 15px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    margin-top: 25px;
+    margin: 25px 10px;
 }
 
 .image-map-container:hover {
@@ -306,6 +306,7 @@ nav {
 
 .item-name {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 10px;
 }
 
 .item-summary {
