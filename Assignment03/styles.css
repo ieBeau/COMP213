@@ -6,22 +6,6 @@ html, body {
     height: 100%;
     width: 980px;
     margin: auto;
-
-    /* background: linear-gradient(135deg, #f0f0f0 25%, #e0e0e0 25%, #e0e0e0 50%, #f0f0f0 50%, #f0f0f0 75%, #e0e0e0 75%);
-    background-size: 20px 20px;
-    background-blend-mode: overlay;
-    background-color: #f2f2f2;
-    background-image: radial-gradient(circle at 20px 20px, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0.1)), 
-                      linear-gradient(135deg, #f9f9f9 25%, #ececec 25%, #ececec 50%, #f9f9f9 50%); */
-
-
-        background: 
-            radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.8), rgba(200, 200, 200, 0.1), rgba(240, 240, 240, 0.8)),
-            linear-gradient(135deg, #f0f0f0 25%, #d9d9d9 25%, #d9d9d9 50%, #f0f0f0 50%, #f0f0f0 75%, #d9d9d9 75%);
-        background-size: 20px 20px, 100% 100%;
-        background-blend-mode: overlay;
-        background-color: #f1f1f1;
-        background-repeat: repeat;
 }
 
 body {
@@ -29,7 +13,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: large;
-    /* background-color:rgb(225, 225, 225); */
+    background-color:rgb(225, 225, 225);
 }
 
 header {
@@ -351,16 +335,6 @@ nav {
     box-shadow: 0 0 .5rem .1rem rgb(28, 17, 0, 1);
     animation: none;
 }
-
-/* .background {
-    height: 100%;
-    background: linear-gradient(135deg, #f0f0f0 25%, #e0e0e0 25%, #e0e0e0 50%, #f0f0f0 50%, #f0f0f0 75%, #e0e0e0 75%);
-    background-size: 20px 20px;
-    background-blend-mode: overlay;
-    background-color: #f2f2f2;
-    background-image: radial-gradient(circle at 20px 20px, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0.1)), 
-                      linear-gradient(135deg, #f9f9f9 25%, #ececec 25%, #ececec 50%, #f9f9f9 50%);
-} */
 
 @keyframes fade {
     0% { opacity: 0; }
