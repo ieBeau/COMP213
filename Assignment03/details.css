@@ -1,25 +1,18 @@
 /* details.css */
 
-.imgLarge {
+.img-large {
     border-radius: 25px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-header .banner {
-    display: flex; 
-    flex-direction: row; 
-    justify-content: space-between;
-    margin-top: 25px;
+.image-large-container {
+    position: relative;
 }
 
-header .containerTitle {
-    text-align: center;
-}
-
-.buttonReturn {
-    position: absolute;
-    display: flex;
-    align-self: flex-end;
-    margin-right: 20px;
+.button-return {
+    position: absolute; 
+    top: 0px; 
+    right: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(68, 68, 68);
 }

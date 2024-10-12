@@ -2,38 +2,53 @@
 <html lang="en">
     <!-- Created by: Pierre Moreau #301489780 - Created: 10/07/2024 -->
     <head>
-		<title>Pierre Moreau - COMP213 Photo Display</title>
+        <title>Pierre Moreau - COMP213 Photo Display</title>
         <meta charset="utf-8">
-		<link rel="stylesheet" href="styles.css"> 
-        <link rel="stylesheet" href="details.css">
+    </head>
+    </head>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="details.css">
     </head>
     <body>
-        <header>
-            <div class="banner">
-                <a href="https://hazakiknives.com/" target="_blank">
-                    <img src="./assets/logo.webp"  alt="Hazai Logo"/>
-                </a>
-                <nav>
-                    <a href="../">
-                        <h4>Homepage</h4>
-                    </a>
-                </nav>
-            </div>
-            <div class="containerTitle">
-                <h2 class="mainTitle">Gyuto "Chef" Knife</h2>
-            </div>
-        </header>
         <main>
-            <a class="buttonReturn" href="./index.html">
-                <h4>Back</h4>
-            </a>
-            <img class="imgLarge" src="./assets/knife.webp" alt="Hazaki Gyuto - Damascus" height="100%" width="980px"/>
+            <table class="table-main">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="https://hazakiknives.com/" target="_blank">
+                                <img src="./assets/logo.webp" alt="Hazai Logo"/>
+                            </a>
+                        </td>
+                        <td class="container-nav">
+                            <nav>
+                                <a href="../">
+                                    <h4>Homepage</h4>
+                                </a>
+                            </nav>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="container" colspan="2">
+                            <h2 class="main-title">Gyuto &ldquo;Chef&rdquo; Knife</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="image-large-container" colspan="2">
+                            <a class="button-return" href="./index.html">
+                                <h4>Back</h4>
+                            </a>
+                            <img class="img-large" src="./assets/knife.webp" alt="Hazaki Gyuto - Damascus" width="970px"/>                
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
         </main>
+        <footer>
+            <h6 class="copyright">&copy;&nbsp;Copyright <span lang="en-ca">Fall</span> 20<span lang="en-ca">24</span>&nbsp; | &nbsp;Pierre Moreau – 301489780&nbsp; | &nbsp;COMP213 – Assignment 3</h6>
+            <h6 class="credits">Credits for images and information: 
+                <a href="https://hazakiknives.com/"  target="_blank">Hazaki</a>
+            </h6>
+        </footer>
     </body>
-    <footer>
-        <h6 class="copyright">&copy;&nbsp;Copyright <span lang="en-ca">Fall</span> 20<span lang="en-ca">24</span> | Pierre Moreau [301489780] | COMP213 | Assignment 3</h6>
-        <h6 class="credits">Credits for images and information: 
-            <a href="https://hazakiknives.com/">Hazaki</a>
-        </h6>
-    </footer>
 </html>

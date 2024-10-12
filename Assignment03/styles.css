@@ -6,13 +6,30 @@ html, body {
     height: 100%;
     width: 980px;
     margin: auto;
+
+    /* background: linear-gradient(135deg, #f0f0f0 25%, #e0e0e0 25%, #e0e0e0 50%, #f0f0f0 50%, #f0f0f0 75%, #e0e0e0 75%);
+    background-size: 20px 20px;
+    background-blend-mode: overlay;
+    background-color: #f2f2f2;
+    background-image: radial-gradient(circle at 20px 20px, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0.1)), 
+                      linear-gradient(135deg, #f9f9f9 25%, #ececec 25%, #ececec 50%, #f9f9f9 50%); */
+
+
+        background: 
+            radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.8), rgba(200, 200, 200, 0.1), rgba(240, 240, 240, 0.8)),
+            linear-gradient(135deg, #f0f0f0 25%, #d9d9d9 25%, #d9d9d9 50%, #f0f0f0 50%, #f0f0f0 75%, #d9d9d9 75%);
+        background-size: 20px 20px, 100% 100%;
+        background-blend-mode: overlay;
+        background-color: #f1f1f1;
+        background-repeat: repeat;
 }
 
 body {
     display: flex;
-    font-family: Verdana; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
     font-size: large;
-    background-color:rgb(225, 225, 225);
+    /* background-color:rgb(225, 225, 225); */
 }
 
 header {
@@ -29,81 +46,74 @@ main {
     background: none;
     color: rgb(68, 68, 68);
     width: 100%;
-    height: 100%;
-    margin-bottom: 20px;
     animation: fade 4s;
 }
 
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 50px 0 0 0;
-    height: 75px;
+    text-align: center;
+    margin-top: auto;
 }
 
 table {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 100%;
     margin: 10px;
-    border-color: black;
-    border: 2;
 }
 
-.tableLocations {
+tbody {
+    width: 100%;
+}
+
+.table-locations {
     display: table;
-    margin: auto 10px 0 auto;
+    margin: 25px 10px 0 10px;
     width: auto;
 }
 
-.tableMain {
+.table-main {
     margin: 25px 10px 0 10px;
 }
 
-.tableSelection {
+.table-selection {
     font-size: smaller; 
     width: auto; 
     margin: 0;
-    margin: 20px 0 0 0;
+    margin: 30px 0 0 0;
     cursor: pointer;
 }
 
-.containerLocations {
+.container-locations {
     margin: 0;
     padding: 0;
     width: 100%;
 }
 
-.containerLoc {
+.container-loc {
     align-self: flex-end;
     margin: 0 20px 0 0;
 }
 
-.containerLoc .title {
+.container-loc .title {
     width: 150px;
 }
 
-.containerLoc .address {
+.container-loc .address {
     text-align: center;
     font-size: small;
     width: 200px;
     margin: 0 10px 0 10px;
 }
 
-.bodyLocations {
+.body-locations {
     width: 100%;
 }
 
-.containerSelectionDetail {
+.container-selection-detail {
     width: 100%;
 }
 
-.selectionDetail {
-    margin: 0;
-    padding: 0 30px 0 30px;
+.selection-detail {
+    margin: 10px 0 0 0;
+    padding: 0 0 0 30px;
 }
 
 .highlight {
@@ -113,101 +123,103 @@ table {
 
 /* IMAGE ZOOM IN */
 
-.imgSmall {
+.img-small {
     width: 100%;
     height: 100%;
     transition: transform 0.3s ease, transform-origin 0.3s ease;
 }
 
-.imageContainer {
+.image-container {
     overflow: hidden;
     position: relative;
     width: 180px;
     height: 180px;
     border-radius: 15px;
+    margin: 10px 0 0 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 
-.imageContainer:hover {
+.image-container:hover {
     position: relative;
 }
 
-.imageContainer:hover .imgSmall {
+.image-container:hover .img-small {
     transform-origin: 10% 10%;
     transform: scale(2);
 }
 
 /* MAP ZOOM IN */
 
-.containerMap {
-    width: 300px;
+.container-map {
+    width: 275px;
 }
 
-.imgMap {
+.img-map {
     transition: transform 0.3s ease, transform-origin 0.3s ease;
 }
 
-.imageMapContainer {
+.image-map-container {
     overflow: hidden;
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 275px;
+    height: 275px;
     border-radius: 15px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    margin: 30px 0 30px 0;
+    margin-top: 25px;
 }
 
-.imageMapContainer:hover {
+.image-map-container:hover {
     position: relative;
 }
 
-.imageMapContainer:hover .imgMap {
+.image-map-container:hover .img-map {
     transform: scale(1.4);
 }
 
 /* IMAGE SAMPLE ZOOM IN */
 
-.imgSmall-sample2 {
+.img-small-sample-2 {
     width: 100%;
     height: 100%;
     transition: transform 0.3s ease, transform-origin 0.3s ease;
 }
 
-.imgSmall-sample3 {
+.img-small-sample-3 {
     width: 100%;
     height: 100%;
     transition: transform 0.3s ease, transform-origin 0.3s ease;
 }
 
-.imageContainer-sample {
+.image-container-sample {
     overflow: hidden;
     position: relative;
     width: 180px;
     height: 180px;
     border-radius: 15px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    margin-top: 10px;
+    margin: 25px 30px 45px 10px;
 }
 
-.imageContainer-sample:hover {
+.image-container-sample:hover {
     position: relative;
 }
 
-.imageContainer-sample:hover .imgSmall-sample2 {
+.image-container-sample:hover .img-small-sample-2 {
     transform-origin: 85% 90%;
     transform: scale(2);
 }
 
-.imageContainer-sample:hover .imgSmall-sample3 {
+.image-container-sample:hover .img-small-sample-3 {
     transform-origin: 95% 15%;
     transform: scale(2);
 }
 
 /* TEXT STYLE */
 
-.viewImageText {
+.view-image-text {
     font-size: small; 
+    font-weight: 600;
     margin-top: 10px;
 }
 
@@ -231,11 +243,10 @@ a:hover::before {
 
 /* Header */
 
-.mainTitle {
+.main-title {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: xxx-large;
     color: rgb(68, 68, 68);
-    /* margin: 50px 0px 50px 0px; */
 }
 
 nav {
@@ -248,13 +259,13 @@ nav {
 
 .copyright {
     font-size: small;
-    margin: 25px 0px 5px 0px;
+    margin: 75px 0 5px 0;
     color: rgb(68, 68, 68);
 }
 
 .credits {
     font-size: small;
-    margin: 0px 0px 15px 0px;
+    margin: 5px 0 25px 0;
     color: rgb(68, 68, 68);
 }
 
@@ -264,50 +275,62 @@ nav {
     text-align: center;
 }
 
-.containerSelection {
+.container-images {
+    text-align: center;
+    vertical-align: top;
+}
+
+.container-selection {
     color: white;
     background-color: rgb(125, 125, 125);
     text-align: center;
     margin: 0;
 }
 
-.containerSelected {
+.container-selected {
     color: white;
     background-color: rgb(168, 0, 0);
     text-align: center;
     margin: 0;
 }
 
-.selectionKnife {
+.selection-knife {
     padding: 0 10px 0 10px;
     border: 1px solid rgb(68, 68, 68);
     white-space: nowrap;
 }
 
-.containerSelection:hover {
+.container-selection:hover {
     background-color: rgb(80, 80, 80);
 }
 
-.containerSelected:hover {
+.container-selected:hover {
     background-color: rgb(80, 80, 80);
 }
 
-.selectionTitle {
+.selection-title {
     color: white;
     background-color: rgb(68, 68, 68);
     border: 1px solid rgb(40, 40, 40);
 }
 
-.containerNav {
+.container-nav {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: right;
     width: 100%;
 }
 
-.itemSummary {
-    margin: 0 10px 10px 10px;
+.item-name {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.buttonPurchase {
+.item-summary {
+    margin: 0 10px 0 10px;
+    text-align: left;
+    line-height: 25px;
+}
+
+.button-purchase {
     text-align: center; 
     padding: 5px; 
     border-radius: 15px; 
@@ -316,18 +339,28 @@ nav {
     cursor: pointer;
 }
 
-.buttonPurchase:hover {
+.button-purchase:hover {
     color: hsl(0, 0%, 100%);
     background-color: rgb(28, 17, 0);
 }
 
 
-.buttonPurchase:hover::before {
+.button-purchase:hover::before {
     border-width: 0;
     background-color: rgb(28, 17, 0);
     box-shadow: 0 0 .5rem .1rem rgb(28, 17, 0, 1);
     animation: none;
 }
+
+/* .background {
+    height: 100%;
+    background: linear-gradient(135deg, #f0f0f0 25%, #e0e0e0 25%, #e0e0e0 50%, #f0f0f0 50%, #f0f0f0 75%, #e0e0e0 75%);
+    background-size: 20px 20px;
+    background-blend-mode: overlay;
+    background-color: #f2f2f2;
+    background-image: radial-gradient(circle at 20px 20px, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0.1)), 
+                      linear-gradient(135deg, #f9f9f9 25%, #ececec 25%, #ececec 50%, #f9f9f9 50%);
+} */
 
 @keyframes fade {
     0% { opacity: 0; }
