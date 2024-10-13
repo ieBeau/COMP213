@@ -41,6 +41,7 @@ footer {
 .banner-container {
     position: relative;
     width: 100%;
+    min-width: 980px;
     height: 230px;
     background-image: url('./assets/board.jpg');
     background-position: center 35%;
