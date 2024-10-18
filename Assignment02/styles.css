@@ -67,17 +67,15 @@ footer {
 }
 
 .banner-container {
-    /* width: 100%; */
-    /* height: 380px; */
-    /* overflow: hidden; */
-    position: absolute;
-    z-index: 0;
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
 }
 
-/* .banner-container img {
+.banner-container img {
     width: 100%;
     margin: -350px 0px 0px 0px
-} */
+}
 
 .citation {
     color: rgb(142, 142, 142);
