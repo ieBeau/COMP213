@@ -1,0 +1,298 @@
+<html lang="en">
+    <!-- Created by: Pierre Moreau #301489780 - Created: 11/03/2024 -->
+    <head>
+        <title>Pierre Moreau - COMP213 Home Page</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css"> 
+    </head>
+    <body>
+        <header>
+            <a href="https://www.centennialcollege.ca/"><img src="./assets/CentennialStamp.png" width="100px" height="100px"></a>
+            <a class="navigation-home" href="https://www.centennialcollege.ca/"><p>Homepage</p></a>
+        </header>
+        <main>
+            <section id="new-evaluation">
+                
+                <div class="container-title">
+                    <h2 class="title">Centennial College</h2>
+                    <h3 class="topic">Continuing Education Course/Instructor Evaluation</h3>
+                    <p class="statement">Please read each statement carefully and consider each one individually. Give only <strong>one answer</strong> for each question.</p>
+                </div>
+
+                <form id="evaluation-form">
+
+                    <div class="info">
+                        <label for="course-name"><strong>Course Name/Code:</strong></label>
+                        <textarea type="text" id="course-name" name="course-name" required></textarea>
+                    </div>
+
+                    <div class="info">
+                        <label for="course-name"><strong>Semester:</strong></label>
+
+                        <div class="container-seasons">
+                            <label class="option-name" for="fall">
+                                <input type="radio" id="fall" name="semester" value="fall" required>
+                                Fall
+                            </label>
+                            <label class="option-name" for="winter">
+                                <input type="radio" id="winter" name="semester" value="winter" required>
+                                Winter
+                            </label>
+                            <label class="option-name" for="spring-summer">
+                                <input type="radio" id="spring-summer" name="semester" value="spring-summer" required>
+                                Spring/Summer
+                            </label>
+                        </div>
+                        
+                        <label for="course-year"><strong>Year:</strong></label>
+                        <input type="number" id="course-year" name="course-year" value="" required>
+                    </div>
+
+                    <div class="info">
+                        <label for="instructor-name"><strong>Instructor:</strong></label>
+                        <textarea type="text" id="instructor-name" name="instructor-name" required></textarea>
+                    </div>
+
+                    <h5>INSTRUCTOR</h5>
+                    <p>How would you rate the instructor's:</p>
+                    <div>
+                        <label for="question-1">1. <strong>Knowledge</strong> of subject?</label>
+                        <div class="option-radio">
+                            <label class="option-name" for="question-1-1">
+                                <input type="radio" id="question-1-1" name="question-1" value="1" required>
+                                Excellent
+                            </label>
+                            <label class="option-name" for="question-1-2">
+                                <input type="radio" id="question-1-2" name="question-1" value="2" required>
+                                Good
+                            </label>
+                            <label class="option-name" for="question-1-3">
+                                <input type="radio" id="question-1-3" name="question-1" value="3" required>
+                                Fair
+                            </label>
+                            <label class="option-name" for="question-1-4">
+                                <input type="radio" id="question-1-4" name="question-1" value="4" required>
+                                Not Satisfactory
+                            </label>
+                        </div>
+
+                        <label for="question-2">2. <strong>Helpfulness</strong>?</label>
+                        <div class="option-radio">
+                            <label class="option-name" for="question-2-1">
+                                <input type="radio" id="question-2-1" name="question-2" value="1" required>
+                                Excellent
+                            </label>
+                            <label class="option-name" for="question-2-2">
+                                <input type="radio" id="question-2-2" name="question-2" value="2" required>
+                                Good
+                            </label>
+                            <label class="option-name" for="question-2-3">
+                                <input type="radio" id="question-2-3" name="question-2" value="3" required>
+                                Fair
+                            </label>
+                            <label class="option-name" for="question-2-4">
+                                <input type="radio" id="question-2-4" name="question-2" value="4" required>
+                                Not Satisfactory
+                            </label>
+                        </div>
+
+                        <label for="question-3">3. <strong>Courtesy and respect</strong> for all students?</label>
+                        <div class="option-radio">
+                            <label class="option-name" for="question-3-1">
+                                <input type="radio" id="question-3-1" name="question-3" value="1" required>
+                                Excellent
+                            </label>
+                            <label class="option-name" for="question-3-2">
+                                <input type="radio" id="question-3-2" name="question-3" value="2" required>
+                                Good
+                            </label>
+                            <label class="option-name" for="question-3-3">
+                                <input type="radio" id="question-3-3" name="question-3" value="3" required>
+                                Fair
+                            </label>
+                            <label class="option-name" for="question-3-4">
+                                <input type="radio" id="question-3-4" name="question-3" value="4" required>
+                                Not Satisfactory
+                            </label>
+                        </div>
+
+                        <label for="question-4">4. <strong>Communication</strong> skills?</label>
+                        <div class="option-radio">
+                            <label class="option-name" for="question-4-1">
+                                <input type="radio" id="question-4-1" name="question-4" value="1" required>
+                                Excellent
+                            </label>
+                            <label class="option-name" for="question-4-2">
+                                <input type="radio" id="question-4-2" name="question-4" value="2" required>
+                                Good
+                            </label>
+                            <label class="option-name" for="question-4-3">
+                                <input type="radio" id="question-4-3" name="question-4" value="3" required>
+                                Fair
+                            </label>
+                            <label class="option-name" for="question-4-4">
+                                <input type="radio" id="question-4-4" name="question-4" value="4" required>
+                                Not Satisfactory
+                            </label>
+                        </div>
+
+                        <label for="question-5">5. Overall <strong>performance</strong>?</label>
+                        <div class="option-radio">
+                            <label class="option-name" for="question-5-1">
+                                <input type="radio" id="question-5-1" name="question-5" value="1" required>
+                                Excellent
+                            </label>
+                            <label class="option-name" for="question-5-2">
+                                <input type="radio" id="question-5-2" name="question-5" value="2" required>
+                                Good
+                            </label>
+                            <label class="option-name" for="question-5-3">
+                                <input type="radio" id="question-5-3" name="question-5" value="3" required>
+                                Fair
+                            </label>
+                            <label class="option-name" for="question-5-4">
+                                <input type="radio" id="question-5-4" name="question-5" value="4" required>
+                                Not Satisfactory
+                            </label>
+                        </div>
+                    </div>
+
+                    <h5>COURSE</h5>
+                    <div>
+                        <label for="question-6">6. How would you rate the <strong>course material</strong>?</label>
+                        <div class="option-radio">
+                            <label class="option-name" for="question-6-1">
+                                <input type="radio" id="question-6-1" name="question-6" value="1" required>
+                                Excellent
+                            </label>
+                            <label class="option-name" for="question-6-2">
+                                <input type="radio" id="question-6-2" name="question-6" value="2" required>
+                                Good
+                            </label>
+                            <label class="option-name" for="question-6-3">
+                                <input type="radio" id="question-6-3" name="question-6" value="3" required>
+                                Fair
+                            </label>
+                            <label class="option-name" for="question-6-4">
+                                <input type="radio" id="question-6-4" name="question-6" value="4" required>
+                                Not Satisfactory
+                            </label>
+                        </div>
+                        
+                        <label for="question-7">7. How much did this course meet your <strong>expectations</strong>?</label>
+                        <div class="option-radio">
+                            <label class="option-name" for="question-7-1">
+                                <input type="radio" id="question-7-1" name="question-7" value="1" required>
+                                Excellent
+                            </label>
+                            <label class="option-name" for="question-7-2">
+                                <input type="radio" id="question-7-2" name="question-7" value="2" required>
+                                Good
+                            </label>
+                            <label class="option-name" for="question-7-3">
+                                <input type="radio" id="question-7-3" name="question-7" value="3" required>
+                                Fair
+                            </label>
+                            <label class="option-name" for="question-7-4">
+                                <input type="radio" id="question-7-4" name="question-7" value="4" required>
+                                Not Satisfactory
+                            </label>
+                        </div>
+                        
+                        <label for="question-8">8. How would you rate this course <strong>(overall)</strong>?</label>
+                        <div class="option-radio">
+                            <label class="option-name" for="question-8-1">
+                                <input type="radio" id="question-8-1" name="question-8" value="1" required>
+                                Excellent
+                            </label>
+                            <label class="option-name" for="question-8-2">
+                                <input type="radio" id="question-8-2" name="question-8" value="2" required>
+                                Good
+                            </label>
+                            <label class="option-name" for="question-8-3">
+                                <input type="radio" id="question-8-3" name="question-8" value="3" required>
+                                Fair
+                            </label>
+                            <label class="option-name" for="question-8-4">
+                                <input type="radio" id="question-8-4" name="question-8" value="4" required>
+                                Not Satisfactory
+                            </label>
+                        </div>
+                    </div>
+
+                    <h5>GENERAL INFORMATION</h5>
+                    <div>
+                        <label for="question-9">9. Was the <strong>course outline</strong> reviewed/explained at the beginning of your course?</label>
+                        <div class="option-choice">
+                            <label class="option-name" for="question-9-1">
+                                <input type="radio" id="question-9-1" name="question-9" value="1" required>
+                                Yes
+                            </label>
+                            <label class="option-name" for="question-9-2">
+                                <input type="radio" id="question-9-2" name="question-9" value="2" required>
+                                No
+                            </label>
+                            <label class="option-name" for="question-9-3">
+                                <input type="radio" id="question-9-3" name="question-9" value="3" required>
+                                Not Sure
+                            </label>
+                        </div>
+                        
+                        <label for="question-10">10. Would you <strong>recommend</strong> this course to a friend with the same interests?</label>
+                        <div class="option-choice">
+                            <label class="option-name" for="question-10-1">
+                                <input class="button-option" type="radio" id="question-10-1" name="question-10" value="1" required>
+                                Yes
+                            </label>
+                            <label class="option-name" for="question-10-2">
+                                <input class="button-option" type="radio" id="question-10-2" name="question-10" value="2" required>
+                                No
+                            </label>
+                            <label class="option-name" for="question-10-3">
+                                <input class="button-option" type="radio" id="question-10-3" name="question-10" value="3" required>
+                                Not Sure
+                            </label>
+                        </div>
+                    </div>
+
+                    <h5>ANY OTHER COMMENTS</h5>
+                    <div>
+                        <div class="container-comments">
+                            <label for="question-11">11. What is the <strong>best thing</strong> about this course?</label>
+                            <textarea type="text" id="question-11" name="question-11"></textarea>
+                        </div>
+    
+                        <div class="container-comments">
+                            <label for="question-12">12. How could we <strong>improve</strong> this course?</label>
+                            <textarea type="text" id="question-12" name="question-12"></textarea>
+                        </div>
+    
+                        <div class="container-comments">
+                            <label for="question-13">13. Other:</label>
+                            <textarea type="text" id="question-13" name="question-13"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="button-navigation">
+                        <button class="reset" type="reset">Reset</button>
+                        <button class="submit" type="submit">Submit</button>
+                    </div>
+
+                    
+                    <div class="contact">
+                        <p>Thank you! We pay attention to your feedback!</p>
+                        <div class="links">
+                            <p class="link">Web: <a href="https://www.centennialcollege.ca/continuing_education" target="_blank">www.centennialcollege.ca/continuing_education</a></p>
+                            <p class="link">Email: <a href="mailto:continuingeducation@centennialcollege.ca" target="_blank">continuingeducation@centennialcollege.ca</a></p>
+                        </div>
+                    </div>
+
+                </form>
+            </section>
+        </main>
+        <footer>
+            <h6 class="copyright">&copy;&nbsp;Copyright <span lang="en-ca">Fall</span> 20<span lang="en-ca">24</span>&nbsp; | &nbsp;Pierre Moreau – 301489780&nbsp; | &nbsp;COMP213 – Assignment 4</h6>    
+        </footer>
+    </body>
+    <script src="scripts.js"></script>
+</html>

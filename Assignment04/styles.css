@@ -1,0 +1,205 @@
+/* styles.css */
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    /* height: 100%; */
+    width: 980px;
+    margin: auto;
+}
+
+body {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: large;
+    padding: 25px;
+    background-color:rgb(225, 225, 225);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 750px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    color: rgb(68, 68, 68);
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+}
+
+.navigation-home {
+    margin-left: auto;
+}
+
+.container-title {
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 0;
+}
+
+.topic {
+    margin-top: 0;
+}
+
+.statement {
+    font-size: small;
+}
+.container-seasons {
+    display: flex; 
+    justify-content: space-evenly; 
+    width: 100%; 
+    margin-right: auto;
+}
+
+.evaluation-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px;
+}
+
+
+.button-navigation {
+    text-align: center;
+}
+
+.contact {
+    font-style: italic;
+    font-size: small; 
+    text-align: center;
+}
+
+.contact .links {
+    display: flex; 
+    justify-content: space-evenly;
+}
+
+.contact .links .link {
+    margin: 0;
+}
+
+.option-radio {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.option-choice {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.option-name {
+    cursor: pointer;
+}
+
+.container-comments {
+    display: flex; 
+    flex-direction: column;
+    padding: 10px;
+}
+
+.info {
+    display: flex; 
+    align-items: center;
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+
+h5 {
+    background-color: rgb(200, 200, 200);
+    padding: 5px;
+}
+
+button {
+    padding: 5px;
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: rgb(6, 60, 0);
+    color: white;
+}
+
+.reset:hover {
+    background-color: rgb(113, 113, 113);
+    color: white;
+}
+
+#new-evaluation {
+    border-style: double; 
+    padding: 10px; 
+    box-shadow: 0px 5px 10px 2px rgb(0 0 0 / .8);
+    width: 750px;
+}
+
+#course-name {
+    flex: 1; 
+    height: 40px; 
+    min-height: 40px;
+    margin-left: 10px; 
+    padding: 10px; 
+}
+
+#course-year {
+    padding: 5px;
+    max-width: 12%;
+    min-width: 12%;
+    margin-left: auto; 
+    margin-right: 10px;
+}
+
+#instructor-name {
+    flex: 1; 
+    height: 40px; 
+    min-height: 40px;
+    margin-left: 10px; 
+    padding: 10px; 
+}
+
+#question-11 {
+    min-width: 100%; 
+    max-width: 100%; 
+    height: 40px; 
+    min-height: 40px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#question-12 {
+    min-width: 100%; 
+    max-width: 100%; 
+    height: 40px;
+    min-height: 40px; 
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#question-13 {
+    min-width: 100%; 
+    max-width: 100%; 
+    height: 100px; 
+    min-height: 40px;
+    margin-top: 10px;
+    padding: 10px;
+}
