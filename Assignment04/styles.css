@@ -4,24 +4,27 @@ html, body {
     display: flex;
     flex-direction: column;
     /* height: 100%; */
-    width: 980px;
+    width: 100%;
     margin: auto;
 }
 
 body {
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
     font-size: large;
-    padding: 25px;
-    background-color:rgb(225, 225, 225);
+    background-color:rgb(255, 255, 255);
+    align-items: center;
 }
 
 header {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     align-self: center;
-    width: 750px;
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    /* background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(200, 200, 200, 0.5) 5%, rgba(0, 0, 0, 1) 25%); */
 }
 
 main {
@@ -29,17 +32,78 @@ main {
     flex-direction: column;
     align-items: center;
     background: none;
-    color: rgb(68, 68, 68);
-    width: 100%;
+    /* width: 100%; */
+    width: 980px;
+    padding: 25px;
 }
 
 footer {
-    text-align: center;
-    margin-top: auto;
+    display: flex;
+    height: 5%;
+    color: rgb(69, 69, 70);
+    align-items: center;
+    justify-content: center;
+}
+
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 18px;
+}
+
+a { 
+    color: inherit; 
+    text-decoration: none;
+    transition: .25s ease-in-out;
+}
+
+a:hover {
+    color: rgb(149, 155, 69);
+}
+
+.home-icon {
+    filter: rgb(0, 0, 0);
+        /* filter: saturate(55%) brightness(50%) hue-rotate(64deg) sepia(55%) brightness(1.5); */
+}
+
+a:hover .home-icon {
+    /* fill: black; */
+    /* background-color: rgb(255, 255, 255);
+    -webkit-mask: url(./assets/home.svg) no-repeat center;
+    mask: url(./assets/home.svg) no-repeat center; */
+    /* filter: hue-rotate(0deg) saturate(100%) brightness(50%) sepia(100%) hue-rotate(-50deg) brightness(1.5); */
+    /* filter: hue-rotate(45deg) saturate(250%) brightness(70%) sepia(65%) contrast(105%); */
+
+}
+
+a:hover::before {
+    border-width: 0;
+    background-color: rgb(149, 155, 69);
+    box-shadow: 0 0 .5rem .1rem rgb(149, 155, 69);
+    animation: none;
+}
+
+.logo {
+    /* border-radius: 50%;
+    overflow: hidden; */
+}
+
+h4 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10% 0 auto;
 }
 
 .navigation-home {
-    margin-left: auto;
+    /* color: rgb(69, 69, 70); */
+    color: rgb(200, 200, 200);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 50px;
 }
 
 .container-title {
@@ -57,11 +121,20 @@ footer {
 .statement {
     font-size: small;
 }
+
 .container-seasons {
     display: flex; 
     justify-content: space-evenly; 
     width: 100%; 
     margin-right: auto;
+}
+
+.container-year {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: auto;
+    align-items: center;
 }
 
 .evaluation-form {
@@ -119,21 +192,67 @@ footer {
 
 .info {
     display: flex; 
-    align-items: center;
+    /* align-items: center; */
     width: 100%;
     margin: 10px 0 10px 0;
 }
 
+.info label {
+    
+}
+
 h5 {
-    background-color: rgb(200, 200, 200);
+    /* background-color: rgb(200, 200, 200); */
+    color: white;
+    background-color: rgb(149, 155, 69);
     padding: 5px;
 }
 
 button {
     padding: 5px;
     width: 100px;
+    margin: 10px;
+    font-size: medium;
     border-radius: 10px;
     cursor: pointer;
+}
+
+/* input[type="radio"]:checked {
+    accent-color: yellow;
+} */
+
+input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 2px solid rgb(149, 155, 69);
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+input[type="radio"]:checked {
+    background-color: rgb(149, 155, 69);
+    border-color: rgb(149, 155, 69);
+    position: relative;
+}
+
+input[type="radio"]:checked::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input[type="radio"]:hover {
+    box-shadow: 0 0 5px rgb(149, 155, 69);
 }
 
 .submit:hover {
@@ -142,15 +261,22 @@ button {
 }
 
 .reset:hover {
-    background-color: rgb(113, 113, 113);
+    background-color: rgb(69, 69, 70);
     color: white;
 }
 
-#new-evaluation {
+section {
     border-style: double; 
+    border-radius: 25px;
     padding: 10px; 
+    background-color:rgb(235, 235, 235);
+    /* box-shadow: 0px 5px 10px 2px rgb(149 155 69 / .8); */
     box-shadow: 0px 5px 10px 2px rgb(0 0 0 / .8);
     width: 750px;
+}
+
+.info .title {
+    margin-top: 10px;
 }
 
 #course-name {
@@ -162,11 +288,9 @@ button {
 }
 
 #course-year {
+    width: 50%;
     padding: 5px;
-    max-width: 12%;
-    min-width: 12%;
-    margin-left: auto; 
-    margin-right: 10px;
+    margin-left: 10px;
 }
 
 #instructor-name {

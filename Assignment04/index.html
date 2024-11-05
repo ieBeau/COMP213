@@ -7,14 +7,32 @@
     </head>
     <body>
         <header>
-            <a href="https://www.centennialcollege.ca/"><img src="./assets/CentennialStamp.png" width="100px" height="100px"></a>
-            <a class="navigation-home" href="https://www.centennialcollege.ca/"><p>Homepage</p></a>
+            <a class="logo" href="https://www.centennialcollege.ca/">
+                <img src="./assets/CentennialBanner.jpg" height="100px">
+            </a>
+            
+            <nav>
+                <a class="navigation-home" href="../">
+                    <img src="./assets/home.svg" height="50px" class="home-icon">
+                    <h4>Homepage</h4>
+                </a>
+
+                <a class="navigation-home" href="https://www.centennialcollege.ca/about-centennial/visit-us">
+                    <img src="./assets/location.svg" height="50px" class="home-icon">
+                    <h4>Visit Us</h4>
+                </a>
+    
+                <a class="navigation-home" href="https://www.centennialcollege.ca/about-centennial/contact-us">
+                    <img src="./assets/mail.svg" height="50px" class="home-icon">
+                    <h4>Contact Us</h4>
+                </a>
+            </nav>
         </header>
         <main>
             <section id="new-evaluation">
                 
                 <div class="container-title">
-                    <h2 class="title">Centennial College</h2>
+                    <h2 class="title">Centennial <span style="color: rgb(149, 155, 69);">College</span></h2>
                     <h3 class="topic">Continuing Education Course/Instructor Evaluation</h3>
                     <p class="statement">Please read each statement carefully and consider each one individually. Give only <strong>one answer</strong> for each question.</p>
                 </div>
@@ -22,7 +40,7 @@
                 <form id="evaluation-form">
 
                     <div class="info">
-                        <label for="course-name"><strong>Course Name/Code:</strong></label>
+                        <label class="title" for="course-name"><strong>Course Name/Code:</strong></label>
                         <textarea type="text" id="course-name" name="course-name" required></textarea>
                     </div>
 
@@ -44,12 +62,14 @@
                             </label>
                         </div>
                         
-                        <label for="course-year"><strong>Year:</strong></label>
-                        <input type="number" id="course-year" name="course-year" value="" required>
+                        <div class="container-year">
+                            <label for="course-year"><strong>Year:</strong></label>
+                            <input type="number" id="course-year" name="course-year" required>
+                        </div>
                     </div>
 
                     <div class="info">
-                        <label for="instructor-name"><strong>Instructor:</strong></label>
+                        <label class="title" for="instructor-name"><strong>Instructor:</strong></label>
                         <textarea type="text" id="instructor-name" name="instructor-name" required></textarea>
                     </div>
 
@@ -282,8 +302,8 @@
                     <div class="contact">
                         <p>Thank you! We pay attention to your feedback!</p>
                         <div class="links">
-                            <p class="link">Web: <a href="https://www.centennialcollege.ca/continuing_education" target="_blank">www.centennialcollege.ca/continuing_education</a></p>
-                            <p class="link">Email: <a href="mailto:continuingeducation@centennialcollege.ca" target="_blank">continuingeducation@centennialcollege.ca</a></p>
+                            <p class="link"><strong>Web:</strong> <a href="https://www.centennialcollege.ca/continuing_education" target="_blank">www.centennialcollege.ca/continuing_education</a></p>
+                            <p class="link"><strong>Email:</strong> <a href="mailto: continuingeducation@centennialcollege.ca" target="_blank">continuingeducation@centennialcollege.ca</a></p>
                         </div>
                     </div>
 
@@ -295,4 +315,5 @@
         </footer>
     </body>
     <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
 </html>
