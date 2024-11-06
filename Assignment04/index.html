@@ -32,12 +32,12 @@
             <section id="new-evaluation">
                 
                 <div class="container-title">
-                    <h2 class="title">Centennial <span style="color: rgb(149, 155, 69);">College</span></h2>
+                    <h2 class="title">Centennial <span class="title-text" style="">College</span></h2>
                     <h3 class="topic">Continuing Education Course/Instructor Evaluation</h3>
                     <p class="statement">Please read each statement carefully and consider each one individually. Give only <strong>one answer</strong> for each question.</p>
                 </div>
 
-                <form id="evaluation-form">
+                <form id="evaluation-form" method="post" action="/signup.html" target="_blank">
 
                     <div class="info">
                         <label class="title" for="course-name"><strong>Course Name/Code:</strong></label>
@@ -45,9 +45,10 @@
                     </div>
 
                     <div class="info">
-                        <label for="course-name"><strong>Semester:</strong></label>
-
+                        
                         <div class="container-seasons">
+                            <label class="title-semester" for="semester"><strong>Semester:</strong></label>
+                            
                             <label class="option-name" for="fall">
                                 <input type="radio" id="fall" name="semester" value="fall" required>
                                 Fall
@@ -294,8 +295,8 @@
                     </div>
 
                     <div class="button-navigation">
-                        <button class="reset" type="reset">Reset</button>
                         <button class="submit" type="submit">Submit</button>
+                        <button class="reset" type="reset">Reset</button>
                     </div>
 
                     
