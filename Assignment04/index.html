@@ -1,5 +1,5 @@
 <html lang="en">
-    <!-- Created by: Pierre Moreau #301489780 - Created: 11/03/2024 -->
+    <!-- Created by: Pierre Moreau #301489780 - Created: 11/16/2024 -->
     <head>
         <title>Pierre Moreau - COMP213 Home Page</title>
         <meta charset="utf-8">
@@ -32,16 +32,15 @@
             <section id="new-evaluation">
                 
                 <div class="container-title">
-                    <h2 class="title">Centennial <span class="title-text" style="">College</span></h2>
+                    <h2 class="title">Centennial <span class="title-text">College</span></h2>
                     <h3 class="topic">Continuing Education Course/Instructor Evaluation</h3>
                     <p class="statement">Please read each statement carefully and consider each one individually. Give only <strong>one answer</strong> for each question.</p>
                 </div>
 
-                <form id="evaluation-form" method="post" action="/signup.html" target="_blank">
-
+                <form id="evaluation-form" method="post">
                     <div class="info">
                         <label class="title" for="course-name"><strong>Course Name/Code:</strong></label>
-                        <textarea type="text" id="course-name" name="course-name" required></textarea>
+                        <textarea type="text" id="course-name" name="course-name" placeholder="Course Name/Code" required></textarea>
                     </div>
 
                     <div class="info">
@@ -64,14 +63,20 @@
                         </div>
                         
                         <div class="container-year">
-                            <label for="course-year"><strong>Year:</strong></label>
-                            <input type="number" id="course-year" name="course-year" required>
+                            <label class="course-year-title" for="course-year"><strong>Year:</strong></label>
+                            <select class="course-year-dropdown" name="course-year" required>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                            </select>
                         </div>
                     </div>
 
                     <div class="info">
                         <label class="title" for="instructor-name"><strong>Instructor:</strong></label>
-                        <textarea type="text" id="instructor-name" name="instructor-name" required></textarea>
+                        <textarea type="text" id="instructor-name" name="instructor-name" placeholder="Instructor name" required></textarea>
                     </div>
 
                     <h5>INSTRUCTOR</h5>
@@ -299,7 +304,6 @@
                         <button class="reset" type="reset">Reset</button>
                     </div>
 
-                    
                     <div class="contact">
                         <p>Thank you! We pay attention to your feedback!</p>
                         <div class="links">
