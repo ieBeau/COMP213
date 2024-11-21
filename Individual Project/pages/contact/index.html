@@ -1,48 +1,52 @@
 <html lang="en">
-    <!-- Created by: Pierre Moreau #301489780 - Created: 11/16/2024 -->
     <head>
         <title>Pierre Moreau - COMP213 Home Page</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="styles.css"> 
+        <link rel="stylesheet" href="../../styles.css"> 
+        <link rel="stylesheet" href="./styles.css"> 
     </head>
     <body>
-        <header>
-            <a class="logo" href="https://www.centennialcollege.ca/">
-                <img src="./assets/CentennialBanner.jpg" height="100px">
+        <header style="justify-content: space-between;">
+            <a class="company-logo" href="https://www.pizzahut.ca/">
+                <img src="../../assets/pizzahut-logo-medium.png" height="90px">
             </a>
-            
-            <nav>
-                <a class="navigation-home" href="../">
-                    <img src="./assets/home.svg" height="50px" class="home-icon">
-                    <h4>Homepage</h4>
+            <nav class="nav-contain-main">
+                <a class="nav-main-link" href="../../index.html">
+                    <img src="../../assets/home.svg" height="50px" class="home-icon">
+                    <h4 class="nav-main-title">Home</h4>
                 </a>
-
-                <a class="navigation-home" href="https://www.centennialcollege.ca/about-centennial/visit-us">
-                    <img src="./assets/location.svg" height="50px" class="home-icon">
-                    <h4>Visit Us</h4>
+                <a class="nav-main-link" href="../../pages/menu/index.html">
+                    <img src="../../assets/menu.svg" height="50px" class="menu-icon">
+                    <h4 class="nav-main-title">Menu</h4>
                 </a>
-    
-                <a class="navigation-home" href="https://www.centennialcollege.ca/about-centennial/contact-us">
-                    <img src="./assets/mail.svg" height="50px" class="home-icon">
-                    <h4>Contact Us</h4>
+                <a class="nav-main-link" href="../../pages/contact/index.html">
+                    <svg xmlns="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=mail" width="50" height="50" class="contact-icon-select">
+                        <circle cx="25" cy="25" r="40" />
+                    </svg>
+                    <h4 class="nav-main-title">Contact Us</h4>
+                </a>
+                <a class="nav-main-link" href="../../pages/about/index.html">
+                    <img src="../../assets/location.svg" height="50px" class="search-icon">
+                    <h4 class="nav-main-title">Find a Restaurant</h4>
                 </a>
             </nav>
+            
         </header>
         <main>
             <section id="new-evaluation">
                 
                 <div class="container-title">
-                    <h2 class="title">Centennial <span class="title-text">College</span></h2>
-                    <h3 class="topic">Continuing Education Course/Instructor Evaluation</h3>
-                    <p class="statement">Please read each statement carefully and consider each one individually. Give only <strong>one answer</strong> for each question.</p>
+                    <h2 class="title">Search <span class="title-text">Careers</span></h2>
+                    <h3 class="topic">We love your feedback!</h3>
+                    <p class="statement">Let us know what we can do to improve your pizza experience.</p>
                 </div>
 
                 <!-- The only reason I'm using GET and not POST is because I'm not using a database to store the information. I'm using GET to pass the information from the form to the submit page. -->
                 <!-- As well, GitHub Pages does not support PHP, so I cannot use POST. -->
                 <form id="evaluation-form" method="get" action="./submit.html">
                     <div class="info">
-                        <label class="title" for="course-name"><strong>Course Name/Code:</strong></label>
-                        <textarea type="text" id="course-name" name="course-name" placeholder="Enter your course code" required></textarea>
+                        <label class="title" for="course-name"><strong>Name:</strong></label>
+                        <textarea type="text" id="course-name" name="course-name" placeholder="Course Name/Code" required></textarea>
                     </div>
 
                     <div class="info">
@@ -78,7 +82,7 @@
 
                     <div class="info">
                         <label class="title" for="instructor-name"><strong>Instructor:</strong></label>
-                        <textarea type="text" id="instructor-name" name="instructor-name" placeholder="Enter your instructor's name" required></textarea>
+                        <textarea type="text" id="instructor-name" name="instructor-name" placeholder="Instructor name" required></textarea>
                     </div>
 
                     <h5>INSTRUCTOR</h5>
@@ -120,66 +124,6 @@
                             </label>
                             <label class="option-name" for="question-2-4">
                                 <input type="radio" id="question-2-4" name="question-2" value="4" required>
-                                Not Satisfactory
-                            </label>
-                        </div>
-
-                        <label for="question-3">3. <strong>Courtesy and respect</strong> for all students?</label>
-                        <div class="option-radio">
-                            <label class="option-name" for="question-3-1">
-                                <input type="radio" id="question-3-1" name="question-3" value="1" required>
-                                Excellent
-                            </label>
-                            <label class="option-name" for="question-3-2">
-                                <input type="radio" id="question-3-2" name="question-3" value="2" required>
-                                Good
-                            </label>
-                            <label class="option-name" for="question-3-3">
-                                <input type="radio" id="question-3-3" name="question-3" value="3" required>
-                                Fair
-                            </label>
-                            <label class="option-name" for="question-3-4">
-                                <input type="radio" id="question-3-4" name="question-3" value="4" required>
-                                Not Satisfactory
-                            </label>
-                        </div>
-
-                        <label for="question-4">4. <strong>Communication</strong> skills?</label>
-                        <div class="option-radio">
-                            <label class="option-name" for="question-4-1">
-                                <input type="radio" id="question-4-1" name="question-4" value="1" required>
-                                Excellent
-                            </label>
-                            <label class="option-name" for="question-4-2">
-                                <input type="radio" id="question-4-2" name="question-4" value="2" required>
-                                Good
-                            </label>
-                            <label class="option-name" for="question-4-3">
-                                <input type="radio" id="question-4-3" name="question-4" value="3" required>
-                                Fair
-                            </label>
-                            <label class="option-name" for="question-4-4">
-                                <input type="radio" id="question-4-4" name="question-4" value="4" required>
-                                Not Satisfactory
-                            </label>
-                        </div>
-
-                        <label for="question-5">5. Overall <strong>performance</strong>?</label>
-                        <div class="option-radio">
-                            <label class="option-name" for="question-5-1">
-                                <input type="radio" id="question-5-1" name="question-5" value="1" required>
-                                Excellent
-                            </label>
-                            <label class="option-name" for="question-5-2">
-                                <input type="radio" id="question-5-2" name="question-5" value="2" required>
-                                Good
-                            </label>
-                            <label class="option-name" for="question-5-3">
-                                <input type="radio" id="question-5-3" name="question-5" value="3" required>
-                                Fair
-                            </label>
-                            <label class="option-name" for="question-5-4">
-                                <input type="radio" id="question-5-4" name="question-5" value="4" required>
                                 Not Satisfactory
                             </label>
                         </div>
@@ -226,78 +170,23 @@
                                 Not Satisfactory
                             </label>
                         </div>
-                        
-                        <label for="question-8">8. How would you rate this course <strong>(overall)</strong>?</label>
-                        <div class="option-radio">
-                            <label class="option-name" for="question-8-1">
-                                <input type="radio" id="question-8-1" name="question-8" value="1" required>
-                                Excellent
-                            </label>
-                            <label class="option-name" for="question-8-2">
-                                <input type="radio" id="question-8-2" name="question-8" value="2" required>
-                                Good
-                            </label>
-                            <label class="option-name" for="question-8-3">
-                                <input type="radio" id="question-8-3" name="question-8" value="3" required>
-                                Fair
-                            </label>
-                            <label class="option-name" for="question-8-4">
-                                <input type="radio" id="question-8-4" name="question-8" value="4" required>
-                                Not Satisfactory
-                            </label>
-                        </div>
-                    </div>
-
-                    <h5>GENERAL INFORMATION</h5>
-                    <div>
-                        <label for="question-9">9. Was the <strong>course outline</strong> reviewed/explained at the beginning of your course?</label>
-                        <div class="option-choice">
-                            <label class="option-name" for="question-9-1">
-                                <input type="radio" id="question-9-1" name="question-9" value="1" required>
-                                Yes
-                            </label>
-                            <label class="option-name" for="question-9-2">
-                                <input type="radio" id="question-9-2" name="question-9" value="2" required>
-                                No
-                            </label>
-                            <label class="option-name" for="question-9-3">
-                                <input type="radio" id="question-9-3" name="question-9" value="3" required>
-                                Not Sure
-                            </label>
-                        </div>
-                        
-                        <label for="question-10">10. Would you <strong>recommend</strong> this course to a friend with the same interests?</label>
-                        <div class="option-choice">
-                            <label class="option-name" for="question-10-1">
-                                <input class="button-option" type="radio" id="question-10-1" name="question-10" value="1" required>
-                                Yes
-                            </label>
-                            <label class="option-name" for="question-10-2">
-                                <input class="button-option" type="radio" id="question-10-2" name="question-10" value="2" required>
-                                No
-                            </label>
-                            <label class="option-name" for="question-10-3">
-                                <input class="button-option" type="radio" id="question-10-3" name="question-10" value="3" required>
-                                Not Sure
-                            </label>
-                        </div>
                     </div>
 
                     <h5>ANY OTHER COMMENTS</h5>
                     <div>
                         <div class="container-comments">
                             <label for="question-11">11. What is the <strong>best thing</strong> about this course?</label>
-                            <textarea type="text" id="question-11" name="question-11" placeholder="Enter a comment"></textarea>
+                            <textarea type="text" id="question-11" name="question-11"></textarea>
                         </div>
     
                         <div class="container-comments">
                             <label for="question-12">12. How could we <strong>improve</strong> this course?</label>
-                            <textarea type="text" id="question-12" name="question-12" placeholder="Enter a comment"></textarea>
+                            <textarea type="text" id="question-12" name="question-12"></textarea>
                         </div>
     
                         <div class="container-comments">
                             <label for="question-13">13. Other:</label>
-                            <textarea type="text" id="question-13" name="question-13" placeholder="Please tell us more..."></textarea>
+                            <textarea type="text" id="question-13" name="question-13"></textarea>
                         </div>
                     </div>
 
@@ -318,9 +207,8 @@
             </section>
         </main>
         <footer>
-            <h6 class="copyright">&copy;&nbsp;Copyright <span lang="en-ca">Fall</span> 20<span lang="en-ca">24</span>&nbsp; | &nbsp;Pierre Moreau – 301489780&nbsp; | &nbsp;COMP213 – Assignment 4</h6>    
+            <h6 class="copyright">&copy;&nbsp;Copyright <span lang="en-ca">Fall</span> 20<span lang="en-ca">24</span>&nbsp; | &nbsp;Pierre Moreau – 301489780&nbsp; | &nbsp;COMP213 – Individual Project</h6>    
         </footer>
     </body>
     <script src="scripts.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
 </html>

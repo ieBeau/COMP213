@@ -1,4 +1,4 @@
-/* styles.css */
+/* contact.css */
 
 html, body {
     display: flex;
@@ -17,35 +17,14 @@ body {
     align-items: center;
 }
 
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    width: 100%;
-    height: 100px;
-    background-color: rgb(40, 40, 40);
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
-}
-
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     background: none;
-    width: 100%;
-    max-width: 980px;
+    width: 980px;
     padding: 25px;
     flex-grow: 1;
-}
-
-footer {
-    display: flex;
-    height: 5%;
-    color: rgb(69, 69, 70);
-    align-items: center;
-    justify-content: center;
-    margin-top: auto;
 }
 
 textarea {
@@ -60,13 +39,13 @@ a {
 }
 
 a:hover {
-    color: rgb(149, 155, 69);
+    color: rgb(218, 26, 50);
 }
 
 a:hover::before {
     border-width: 0;
-    background-color: rgb(149, 155, 69);
-    box-shadow: 0 0 .5rem .1rem rgb(149, 155, 69);
+    background-color: rgb(218, 26, 50);
+    box-shadow: 0 0 .5rem .1rem rgb(218, 26, 50);
     animation: none;
 }
 
@@ -74,21 +53,8 @@ h4 {
     margin: 0;
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    margin: 0 5% 0 auto;
-}
-
-.navigation-home {
-    color: rgb(200, 200, 200);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: 50px;
-}
-
 .container-title {
+    font-family: PizzaHut;
     text-align: center;
 }
 
@@ -97,15 +63,17 @@ nav {
 }
 
 .title-text {
-    color: rgb(149, 155, 69);
+    color: rgb(218, 26, 50);
 }
 
 .topic {
-    margin-top: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
 }
 
 .statement {
-    font-size: small;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
 }
 
 .container-seasons {
@@ -196,7 +164,7 @@ nav {
 
 h5 {
     color: white;
-    background-color: rgb(149, 155, 69);
+    background-color: rgb(218, 26, 50);
     padding: 5px;
 }
 
@@ -216,7 +184,7 @@ input[type="radio"] {
     margin-bottom: 3px;
     box-shadow: inset 0px 0px 3px rgba(0,0,0,0.8);
     background-color: white;
-    border: 2px solid rgb(149, 155, 69);
+    border: 2px solid rgb(218, 26, 50);
     border-radius: 50%;
     outline: none;
     cursor: pointer;
@@ -224,8 +192,8 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked {
-    background-color: rgb(149, 155, 69);
-    border-color: rgb(149, 155, 69);
+    background-color: rgb(218, 26, 50);
+    border-color: rgb(218, 26, 50);
     position: relative;
 }
 
@@ -266,12 +234,10 @@ section {
 
 .info .title {
     margin-top: 10px;
-    /* font-size: medium; */
 }
 
 #course-name {
     flex: 1; 
-    font-size: medium;
     height: 40px; 
     min-height: 40px;
     margin-left: 10px; 
@@ -286,7 +252,6 @@ section {
 
 #instructor-name {
     flex: 1; 
-    font-size: medium;
     height: 40px; 
     min-height: 40px;
     margin-left: 10px; 
@@ -294,7 +259,6 @@ section {
 }
 
 #question-11 {
-    font-size: medium;
     min-width: 100%; 
     max-width: 100%; 
     height: 40px; 
@@ -304,7 +268,6 @@ section {
 }
 
 #question-12 {
-    font-size: medium;
     min-width: 100%; 
     max-width: 100%; 
     height: 40px;
@@ -314,17 +277,10 @@ section {
 }
 
 #question-13 {
-    font-size: medium;
     min-width: 100%; 
     max-width: 100%; 
     height: 100px; 
     min-height: 100px;
     margin-top: 10px;
     padding: 10px;
-}
-
-::placeholder {
-    color: grey;
-    opacity: 0.8;
-
 }
