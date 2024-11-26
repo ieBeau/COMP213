@@ -1,18 +1,13 @@
 /* about.css */
 
-.location-results-container {
-    height: 450px;
-    width: 500px;
-    overflow-y: auto;
-    border: 1px solid black;
-    border-radius: 10px 0 0 10px;
-    background-color: #eaeaea;
-    margin: 20px auto;
-
-    /* Style the scrollbar */
-    scrollbar-width: thin;
-    scrollbar-color: white #606060;
+.location-container {
+  display: flex; 
+  flex-wrap: wrap; 
+  flex-direction: row; 
+  justify-content: center; 
+  align-items: center;
 }
+
 
 .location-results-container::-webkit-scrollbar {
     width: 50px;
@@ -101,18 +96,11 @@
     margin: 0;
 }
 
-.location-result-address,
-.location-result-phone {
-    /* margin-bottom: 5px; */
-    /* margin: 0; */
-}
-
 .location-result-button {
     padding: 10px 15px;
     font-size: 1em;
     cursor: pointer;
     background-color: rgb(218, 26, 50);
-    /* background-color: #007bff; */
     color: white;
     border: none;
     border-radius: 5px;
@@ -120,180 +108,195 @@
 
 .location-result-button:hover {
     background-color: rgb(148, 26, 50);
-    /* background-color: #0056b3; */
+}
+
+
+.property {
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  color: #263238;
+  display: flex;
+  font-size: 14px;
+  gap: 15px;
+  height: 30px;
+  justify-content: center;
+  padding: 4px;
+  position: relative;
+  position: relative;
+  transition: all 0.3s ease-out;
+  width: 30px;
+}
+
+.property::after {
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 9px solid #FFFFFF;
+  content: "";
+  height: 0;
+  left: 50%;
+  position: absolute;
+  top: 95%;
+  transform: translate(-50%, 0);
+  transition: all 0.3s ease-out;
+  width: 0;
+  z-index: 1;
+}
+
+.property .icon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+.property .icon svg {
+  height: 20px;
+  width: auto;
+}
+
+.property .details {
+  display: none;
+  flex-direction: column;
+  flex: 1;
+}
+
+.property .address {
+  color: #9E9E9E;
+  font-size: 10px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.property .phone {
+  color: #777777;
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+.property .features {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.property .features > div {
+  align-items: center;
+  background: #F5F5F5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  display: flex;
+  font-size: 10px;
+  gap: 5px;
+  padding: 5px;
+}
+
+/*
+  * Property styles in highlighted state.
+  */
+.property.highlight {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  height: 80px;
+  padding: 8px 15px;
+  width: auto;
+}
+
+.property.highlight::after {
+  border-top: 9px solid #FFFFFF;
+}
+
+.property.highlight .details {
+  display: flex;
+}
+
+.property.highlight .icon svg {
+  width: 50px;
+  height: 50px;
+}
+
+.property .button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+
+.property .bed {
+  color: #FFA000;
+}
+
+.property .order {
+  width: 50%;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.property .order:hover {
+  color: #ffffff;
+  background-color: #424242;
+}
+
+.property .review {
+  width: 50%;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.property .review:hover {
+  color: #ffffff;
+  background-color: #424242;
+}
+
+
+/*
+  * Shop icon colors.
+  */
+.property.highlight:has(.fa-shop) .icon {
+  color: var(--shop-color);
+}
+
+.property:not(.highlight):has(.fa-shop) {
+  background-color: var(--shop-color);
+}
+
+.property:not(.highlight):has(.fa-shop)::after {
+  border-top: 9px solid var(--shop-color);
 }
 
 .map-container {
-    height: 450px; 
-    width: 600px; 
-    overflow: hidden; 
-    border-radius: 0 10px 10px 0; 
-    border: 1px solid black;
+  height: 700px; 
+  width: 700px;
+  overflow: hidden; 
+  border-radius: 0 10px 10px 0; 
+  border: 1px solid black;
 }
 
-.property {
-    align-items: center;
-    background-color: #FFFFFF;
-    /* background-color: red; */
-    border-radius: 50%;
-    color: #263238;
-    display: flex;
-    font-size: 14px;
-    gap: 15px;
-    height: 30px;
-    justify-content: center;
-    padding: 4px;
-    position: relative;
-    position: relative;
-    transition: all 0.3s ease-out;
-    width: 30px;
-  }
-  
-  .property::after {
-    border-left: 9px solid transparent;
-    border-right: 9px solid transparent;
-    border-top: 9px solid #FFFFFF;
-    content: "";
-    height: 0;
-    left: 50%;
-    position: absolute;
-    top: 95%;
-    transform: translate(-50%, 0);
-    transition: all 0.3s ease-out;
-    width: 0;
-    z-index: 1;
-  }
-  
-  .property .icon {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    color: #FFFFFF;
-  }
-  
-  .property .icon svg {
-    /* background-image: url('../assets/pizzahut-small.svg'); */
-    height: 20px;
-    width: auto;
-  }
-  
-  .property .name {
-    /* color: #9E9E9E; */
-    /* font-size: 10px; */
-    /* margin-bottom: 10px; */
-    /* margin-top: 5px; */
-  }
-  
-  .property .details {
-    display: none;
-    flex-direction: column;
-    flex: 1;
-  }
-  
-  .property .address {
-    color: #9E9E9E;
-    font-size: 10px;
-    margin-bottom: 10px;
-    margin-top: 5px;
+.location-results-container {
+  height: 700px;
+  width: 700px;
+  overflow-y: auto;
+  border: 1px solid black;
+  border-radius: 10px 0 0 10px;
+  background-color: #eaeaea;
+  /* order: 2; */
+
+  /* Style the scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: white #606060;
+}
+
+@media (max-width: 1473px) {
+  .location-results-container {
+      order: 2; /* Move the first item to the bottom */
+      border-radius:  0 0 10px 10px;
   }
 
-  .property .phone {
-    color: #777777;
-    font-size: 10px;
-    /* margin-bottom: 10px; */
-    margin-top: 5px;
+  .map-container {
+      order: 1; /* Move the second item to the top */
+      border-radius: 10px 10px 0 0;
   }
-  
-  .property .features {
-    align-items: flex-end;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-  }
-  
-  .property .features > div {
-    align-items: center;
-    background: #F5F5F5;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    display: flex;
-    font-size: 10px;
-    gap: 5px;
-    padding: 5px;
-  }
-  
-  /*
-   * Property styles in highlighted state.
-   */
-  .property.highlight {
-    background-color: #FFFFFF;
-    border-radius: 8px;
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
-    height: 80px;
-    padding: 8px 15px;
-    width: auto;
-  }
-  
-  .property.highlight::after {
-    border-top: 9px solid #FFFFFF;
-  }
-  
-  .property.highlight .details {
-    display: flex;
-  }
-  
-  .property.highlight .icon svg {
-    width: 50px;
-    height: 50px;
-  }
+}
 
-  .property .button-container {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    justify-content: center;
-  }
-  
-  .property .bed {
-    color: #FFA000;
-  }
-  
-  .property .order {
-    /* color: #164b00; */
-    width: 50%;
-    border-radius: 50px;
-    cursor: pointer;
-  }
-  
-  .property .order:hover {
-    color: #ffffff;
-    background-color: #424242;
-  }
-  
-  .property .review {
-    /* color: rgb(148, 26, 50); */
-    width: 50%;
-    border-radius: 50px;
-    cursor: pointer;
-  }
-  
-  .property .review:hover {
-    color: #ffffff;
-    background-color: #424242;
-  }
-
-  
-  /*
-   * Shop icon colors.
-   */
-  .property.highlight:has(.fa-shop) .icon {
-    color: var(--shop-color);
-  }
-  
-  .property:not(.highlight):has(.fa-shop) {
-    background-color: var(--shop-color);
-  }
-  
-  .property:not(.highlight):has(.fa-shop)::after {
-    border-top: 9px solid var(--shop-color);
-  }
