@@ -30,6 +30,14 @@ main {
 textarea {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 18px;
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    margin: 10px;
+    /* min-width: 100%; */
+    /* max-width: 100%; */
+    resize: none;
+    padding: 5px;
 }
 
 a { 
@@ -60,10 +68,6 @@ h4 {
 
 .title {
     margin-bottom: 0;
-}
-
-.title-text {
-    color: rgb(218, 26, 50);
 }
 
 .topic {
@@ -113,10 +117,22 @@ h4 {
     text-align: center;
 }
 
-.contact {
+.contact-footer {
+    display: flex;
     font-style: italic;
     font-size: small; 
     text-align: center;
+    justify-content: center;
+}
+
+.contact-footer .thanks {
+    width: 75%;
+    margin: 0;
+}
+
+.contact-footer .store {
+    color: rgb(218, 26, 50);
+    font-weight: bold;
 }
 
 .contact .links {
@@ -126,6 +142,22 @@ h4 {
 
 .contact .links .link {
     margin: 0;
+}
+
+.social-media-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.social-media-container .title {
+    margin: 0 0 5px 0;
+}
+
+.social-media {
+    /* margin: 5px; */
 }
 
 .option-radio {
@@ -159,7 +191,7 @@ h4 {
 .info {
     display: flex; 
     width: 100%;
-    margin: 10px 0 10px 0;
+    margin: 10px 5px 10px 0;
 }
 
 h5 {
@@ -177,7 +209,15 @@ button {
     cursor: pointer;
 }
 
-input[type="radio"] {
+input {
+    padding: 5px;
+    margin: 0 10px 0 10px;
+    width: 100%;
+    font-size: medium;
+    border-radius: 5px;
+}
+
+/* input[type="radio"] {
     appearance: none;
     width: 20px;
     height: 20px;
@@ -211,7 +251,7 @@ input[type="radio"]:checked::before {
 
 input[type="radio"]:hover {
     box-shadow: 0 0 10px rgb(96, 99, 44);
-}
+} */
 
 .submit:hover {
     background-color: rgb(6, 60, 0);

@@ -1,0 +1,551 @@
+[
+    {
+        "name": "Big New Yorker - Pepperoni Duo",
+        "id": "pizza-big-new-yorker",
+        "type": "pizza",
+        "description": "A 16\" New York-inspired pizza with 6 XL, foldable slices topped with \"Cup n'Crisp\" and Classic Pepperoni",
+        "image": "pizza-big-new-yorker.jpg",
+        "serving": [
+            {
+                "size": "16\" XL",
+                "portion": "6 slices",
+                "calories": "200 Cals/slice",
+                "price": 19.99
+            }
+        ]
+    },
+    {
+        "name": "Handcrafted Smoky Tri-cheese Blend",
+        "id": "pizza-tri-cheese",
+        "type": "pizza",
+        "description": "Our new light & airy everyday crust featuring the perfect combination of smoked cheddar, parm, and pizza mozzarella for cheese lovers",
+        "image": "pizza-tri-cheese.jpg",
+        "serving": [
+            {
+                "size": "12\" Medium",
+                "portion": "8 slices",
+                "calories": "230 Cals/slice",
+                "price": 21.49
+            },
+            {
+                "size": "14\" Large",
+                "portion": "12 slices",
+                "calories": "210 Cals/slice",
+                "price": 25.99
+            }
+        ]
+    },
+    {
+        "name": "Handcrafted Fajita Chicken",
+        "id": "pizza-fajita-chicken",
+        "type": "pizza",
+        "description": "Our new light & airy everyday crust featuring roasted peppers and red onions, fajita seasoned chicken, topped with pizza mozzarella cheese",
+        "image": "pizza-fajita-chicken.jpg",
+        "serving": [
+            {
+                "size": "12\" Medium",
+                "portion": "8 slices",
+                "calories": "210 Cals/slice",
+                "price": 21.49
+            },
+            {
+                "size": "14\" Large",
+                "portion": "12 slices",
+                "calories": "190 Cals/slice",
+                "price": 25.99
+            }
+        ]
+    },
+    {
+        "name": "Handcrafted Cheddar Bacon Ranch",
+        "id": "pizza-cheddar-bacon-ranch",
+        "type": "pizza",
+        "description": "Our new light & airy everyday crust featuring cheddar, crispy bacon, and a ranch drizzle",
+        "image": "pizza-cheddar-bacon-ranch.jpg",
+        "serving": [
+            {
+                "size": "12\" Medium",
+                "portion": "8 slices",
+                "calories": "250 Cals/slice",
+                "price": 21.49
+            },
+            {
+                "size": "14\" Large",
+                "portion": "12 slices",
+                "calories": "230 Cals/slice",
+                "price": 25.99
+            }
+        ]
+    },
+    {
+        "name": "Hawaiian",
+        "id": "pizza-hawaiian",
+        "type": "pizza",
+        "description": "Ham, pineapple and extra pizza mozzarella",
+        "image": "pizza-hawaiian.jpg",
+        "serving": [
+            {
+                "size": "12\" Medium",
+                "portion": "8 slices",
+                "calories": "245 Cals/slice",
+                "price": 21.49
+            },
+            {
+                "size": "14\" Large",
+                "portion": "12 slices",
+                "calories": "235 Cals/slice",
+                "price": 25.99
+            }
+        ]
+    },
+    {
+        "name": "Margherita",
+        "id": "pizza-margherita",
+        "type": "pizza",
+        "description": "Pesto marinated tomatoes, parmesan and pizza mozzarella",
+        "image": "pizza-margherita.jpg",
+        "serving": [
+            {
+                "size": "12\" Medium",
+                "portion": "8 slices",
+                "calories": "220 Cals/slice",
+                "price": 21.49
+            },
+            {
+                "size": "14\" Large",
+                "portion": "12 slices",
+                "calories": "205 Cals/slice",
+                "price": 25.99
+            }
+        ]
+    },
+    {
+        "name": "Supreme Lover's®",
+        "id": "pizza-supreme-lovers",
+        "type": "pizza",
+        "description": "Pepperoni, mild sausage, beef topping, green pepper, sliced mushrooms, red onion and pizza mozzarella",
+        "image": "pizza-supreme-lovers.jpg",
+        "serving": [
+            {
+                "size": "12\" Medium",
+                "portion": "8 slices",
+                "calories": "285 Cals/slice",
+                "price": 21.49
+            },
+            {
+                "size": "14\" Large",
+                "portion": "12 slices",
+                "calories": "255 Cals/slice",
+                "price": 25.99
+            }
+        ]
+    },
+    {
+        "name": "Veggie Lover's®",
+        "id": "pizza-veggie-lovers",
+        "type": "pizza",
+        "description": "Sliced mushrooms, green pepper, red onion, tomato and pizza mozzarella",
+        "image": "pizza-veggie-lovers.jpg",
+        "serving": [
+            {
+                "size": "12\" Medium",
+                "portion": "8 slices",
+                "calories": "245 Cals/slice",
+                "price": 21.49
+            },
+            {
+                "size": "14\" Large",
+                "portion": "12 slices",
+                "calories": "255 Cals/slice",
+                "price": 25.99
+            }
+        ]
+    },
+    {
+        "name": "Meat Lover's®",
+        "id": "pizza-meat-lovers",
+        "type": "pizza",
+        "description": "Pepperoni, Italian sausage, mild sausage, beef topping, ham, bacon crumble and pizza mozzarella",
+        "image": "pizza-meat-lovers.jpg",
+        "serving": [
+            {
+                "size": "12\" Medium",
+                "portion": "8 slices",
+                "calories": "300 Cals/slice",
+                "price": 21.49
+            },
+            {
+                "size": "14\" Large",
+                "portion": "12 slices",
+                "calories": "275 Cals/slice",
+                "price": 25.99
+            }
+        ]
+    },
+    {
+        "name": "Grilled Chicken Rustico",
+        "id": "pizza-grilled-chicken-rustico",
+        "type": "pizza",
+        "description": "Seasoned grilled chicken breast, roasted red pepper, pesto marinated tomatoes and pizza mozzarella",
+        "image": "pizza-grilled-chicken-rustico.jpg",
+        "serving": [
+            {
+                "size": "12\" Medium",
+                "portion": "8 slices",
+                "calories": "230 Cals/slice",
+                "price": 21.49
+            },
+            {
+                "size": "14\" Large",
+                "portion": "12 slices",
+                "calories": "210 Cals/slice",
+                "price": 25.99
+            }
+        ]
+    },
+    {
+        "name": "Smokey Maple Bacon",
+        "id": "pizza-smokey-maple-bacon",
+        "type": "pizza",
+        "description": "Alfredo sauce, maple bacon strips, bacon strips, bacon crumble, sliced mushrooms, smoked aged cheddar and pizza mozzarella",
+        "image": "pizza-smokey-maple-bacon.jpg",
+        "serving": [
+            {
+                "size": "12\" Medium",
+                "portion": "8 slices",
+                "calories": "220 Cals/slice",
+                "price": 21.49
+            },
+            {
+                "size": "14\" Large",
+                "portion": "12 slices",
+                "calories": "205 Cals/slice",
+                "price": 25.99
+            }
+        ]
+    },
+    {
+        "name": "Chicken Caesar",
+        "id": "pizza-chicken-caesar",
+        "type": "pizza",
+        "description": "Alfredo sauce, seasoned grilled chicken breast, bacon crumble, roasted garlic, parmesan and pizza mozzarella",
+        "image": "pizza-chicken-caesar.jpg",
+        "serving": [
+            {
+                "size": "12\" Medium",
+                "portion": "8 slices",
+                "calories": "260 Cals/slice",
+                "price": 21.49
+            },
+            {
+                "size": "14\" Large",
+                "portion": "12 slices",
+                "calories": "220 Cals/slice",
+                "price": 25.99
+            }
+        ]
+    },
+    {
+        "name": "Mac'N Cheese",
+        "id": "pasta-macn-cheese",
+        "type": "pasta",
+        "description": "Classic, creamy cheese sauce and macaroni noodles, topped with orange cheddar and oven baked. Includes fresh breadsticks",
+        "image": "pasta-macn-cheese.jpg",
+        "serving": [
+            {
+                "size": "Regular",
+                "portion": "Serves 2",
+                "calories": "930 Cals/serving",
+                "price": 11.99
+            },
+            {
+                "size": "Large",
+                "portion": "Serves 4",
+                "calories": "930 Cals/serving",
+                "price": 18.99
+            }
+        ]
+    },
+    {
+        "name": "Creamy Chicken Alfredo",
+        "id": "pasta-creamy-chicken-alfredo",
+        "type": "pasta",
+        "description": "Alfredo sauce tossed with penne pasta, topped with seasoned grilled chicken breast, pizza mozzarella and oven-baked. Includes fresh breadsticks",
+        "image": "pasta-creamy-chicken-alfredo.jpg",
+        "serving": [
+            {
+                "size": "Regular",
+                "portion": "Serves 2",
+                "calories": "1030 Cals/serving",
+                "price": 11.99
+            },
+            {
+                "size": "Large",
+                "portion": "Serves 4",
+                "calories": "1030 Cals/serving",
+                "price": 18.99
+            }
+        ]
+    },
+    {
+        "name": "Meaty Marinara",
+        "id": "pasta-meaty-marinara",
+        "type": "pasta",
+        "description": "Bolognese meat sauce tossed with penne pasta, topped with pizza mozzarella and oven-baked. Includes fresh breadsticks",
+        "image": "pasta-meaty-marinara.jpg",
+        "serving": [
+            {
+                "size": "Regular",
+                "portion": "Serves 2",
+                "calories": "1080 Cals/serving",
+                "price": 11.99
+            },
+            {
+                "size": "Large",
+                "portion": "Serves 4",
+                "calories": "1080 Cals/serving",
+                "price": 18.99
+            }
+        ]
+    },
+    {
+        "name": "Mediterranean Con Pollo",
+        "id": "pasta-mediterranean-con-pollo",
+        "type": "pasta",
+        "description": "Marinara and pesto sauce tossed with penne pasta, topped with seasoned grilled chicken breast, roasted red peppers, red onion, green peppers, black olives, feta, pizza mozzarella and oven-baked. Includes fresh breadsticks",
+        "image": "pasta-mediterranean-con-pollo.jpg",
+        "serving": [
+            {
+                "size": "Regular",
+                "portion": "Serves 2",
+                "calories": "1040 Cals/serving",
+                "price": 13.98
+            },
+            {
+                "size": "Large",
+                "portion": "Serves 4",
+                "calories": "1040 Cals/serving",
+                "price": 22.98
+            }
+        ]
+    },
+    {
+        "name": "Chicken Strips",
+        "id": "pings-chicken-strips",
+        "type": "chicken",
+        "description": "Super crunchy & perfectly seasoned, all white meat chicken strips. Comes with a dip",
+        "image": "wings-chicken-strips.jpg",
+        "serving": [
+            {
+                "size": "Regular",
+                "portion": "5pcs",
+                "calories": "575 Cals",
+                "price": 10.99
+            },
+            {
+                "size": "Large",
+                "portion": "10pcs",
+                "calories": "1015 Cals",
+                "price": 19.99
+            }
+        ]
+    },
+    {
+        "name": "Boneless Bites",
+        "id": "pings-boneless-bites",
+        "type": "chicken",
+        "description": "Crispy, breaded seasoned chicken breast pieces tossed in your choice of sauce",
+        "image": "wings-boneless-bites.jpg",
+        "serving": [
+            {
+                "size": "Regular",
+                "portion": "8 wings",
+                "calories": "85 Cals/wing",
+                "price": 10.99
+            },
+            {
+                "size": "Large",
+                "portion": "14 wings",
+                "calories": "85 Cals/wing",
+                "price": 17.99
+            },
+            {
+                "size": "X-Large",
+                "portion": "22 wings",
+                "calories": "85 Cals/wing",
+                "price": 23.99
+            }
+        ]
+    },
+    {
+        "name": "Traditional",
+        "id": "pings-traditional",
+        "type": "chicken",
+        "description": "Classic chicken wings tossed in your choice of sauce",
+        "image": "wings-traditional.jpg",
+        "serving": [
+            {
+                "size": "Regular",
+                "portion": "8 wings",
+                "calories": "65 Cals/wing",
+                "price": 11.99
+            },
+            {
+                "size": "Large",
+                "portion": "14 wings",
+                "calories": "65 Cals/wing",
+                "price": 18.99
+            },
+            {
+                "size": "X-Large",
+                "portion": "22 wings",
+                "calories": "65 Cals/wing",
+                "price": 25.99
+            }
+        ]
+    },
+    {
+        "name": "Breadsticks",
+        "id": "side-breadsticks",
+        "type": "sides",
+        "description": "Crispy on the outside, soft and chewy on the inside. Try an order with cheese",
+        "image": "side-breadsticks.jpg",
+        "serving": [
+            {
+                "size": "Regular",
+                "portion": "5 sticks",
+                "calories": "190 Cals/stick",
+                "price": 6.99
+            },
+            {
+                "size": "Large",
+                "portion": "10 sticks",
+                "calories": "190 Cals/stick",
+                "price": 9.99
+            }
+        ]
+    },
+    {
+        "name": "Onion Rings",
+        "id": "side-onion-rings",
+        "type": "sides",
+        "description": "Crispy and Crunchy onion rings, with a Panko-Style breading",
+        "image": "side-onion-rings.jpg",
+        "serving": [
+            {
+                "size": "Regular",
+                "portion": "Serves 2",
+                "calories": "160 Cals/serving",
+                "price": 6.99
+            },
+            {
+                "size": "Large",
+                "portion": "Serves 4",
+                "calories": "160 Cals/serving",
+                "price": 9.99
+            }
+        ]
+    },
+    {
+        "name": "Mozzarella Sticks",
+        "id": "side-mozzarella-sticks",
+        "type": "sides",
+        "description": "Loaded with real gooey mozzarella and a crispy breading that delivers a big CRUNCH",
+        "image": "side-mozzarella-sticks.jpg",
+        "serving": [
+            {
+                "size": "Creamy Garlic Dip",
+                "portion": "",
+                "calories": "210 Cals/dip",
+                "price": 9.99
+            },
+            {
+                "size": "Marinara",
+                "portion": "",
+                "calories": "30 Cals/dip",
+                "price": 9.99
+            },
+            {
+                "size": "Peppercorn Ranch Dip",
+                "portion": "",
+                "calories": "190 Cals/dip",
+                "price": 9.99
+            },
+            {
+                "size": "Cheddar Jalapeno Dip",
+                "portion": "",
+                "calories": "170 Cals/dip",
+                "price": 9.99
+            },
+            {
+                "size": "Ghost Pepper Ranch Dip",
+                "portion": "",
+                "calories": "240 Cals/dip",
+                "price": 9.99
+            },
+            {
+                "size": "Plum Dip",
+                "portion": "",
+                "calories": "100 Cals/dip",
+                "price": 9.99
+            }
+        ]
+    },
+    {
+        "name": "Garlic Bread",
+        "id": "side-garlic-bread",
+        "type": "sides",
+        "description": "Thick slices of toasted bread brushed with a buttery garlic spread. Try and order with cheese",
+        "image": "side-garlic-bread.jpg",
+        "serving": [
+            {
+                "size": "Regular",
+                "portion": "2 Slices",
+                "calories": "195 Cals/slice",
+                "price": 4.49
+            },
+            {
+                "size": "Large",
+                "portion": "4 Slices",
+                "calories": "195 Cals/slice",
+                "price": 6.49
+            }
+        ]
+    },
+    {
+        "name": "Chicken Caesar Salad",
+        "id": "side-chicken-caesar-salad",
+        "type": "sides",
+        "description": "Seasoned grilled chicken breast, romaine lettuce, bacon strips, croutons and parmesan. Served with creamy Caesar dressing",
+        "image": "side-chicken-caesar-salad.jpg",
+        "serving": [
+            {
+                "size": "Regular",
+                "portion": "Serves 2",
+                "calories": "310 Cals/serving",
+                "price": 7.99
+            },
+            {
+                "size": "Large",
+                "portion": "Serves 4",
+                "calories": "310 Cals/serving",
+                "price": 16.74
+            }
+        ]
+    },
+    {
+        "name": "Cheesy Pull-Aparts",
+        "id": "side-cheesy-pull-aparts",
+        "type": "sides",
+        "description": "Warm baked dough bites coated in a buttery garlic glaze and covered in cheese",
+        "image": "side-cheesy-pull-aparts.jpg",
+        "serving": [
+            {
+                "size": "",
+                "portion": "",
+                "calories": "140 Cals/bun",
+                "price": 7.99
+            }
+        ]
+    }
+]

@@ -1,0 +1,299 @@
+/* about.css */
+
+.location-results-container {
+    height: 450px;
+    width: 500px;
+    overflow-y: auto;
+    border: 1px solid black;
+    border-radius: 10px 0 0 10px;
+    background-color: #eaeaea;
+    margin: 20px auto;
+
+    /* Style the scrollbar */
+    scrollbar-width: thin;
+    scrollbar-color: white #606060;
+}
+
+.location-results-container::-webkit-scrollbar {
+    width: 50px;
+}
+
+.location-results-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.location-results-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 50px;
+    border: 2px solid #f1f1f1;
+}
+
+.location-results-container::-webkit-scrollbar {
+    width: 12px;
+}
+
+.location-title {
+    font-family: PizzaHut;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.location-search {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    width: 1100px; 
+    margin-bottom: 20px;
+}
+
+.refresh-icon {
+  width: 30px;
+  height: 30px;
+  align-self: center;
+  margin-left: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.refresh-icon:active {
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: opacity 1s;
+}
+
+.refresh-icon img {
+  transition: filter 0.3s ease;
+}
+
+#location-search-input {
+    background-image: url('../assets/search.svg');
+    background-position: 10px 12px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    font-size: 1em;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.location-result {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #101010;
+    color: white;
+}
+
+.location-result-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.location-result-title {
+    font-family: PizzaHut;
+    font-size: 1em;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.location-result-image {
+    margin: 0;
+}
+
+.location-result-address,
+.location-result-phone {
+    /* margin-bottom: 5px; */
+    /* margin: 0; */
+}
+
+.location-result-button {
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: rgb(218, 26, 50);
+    /* background-color: #007bff; */
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.location-result-button:hover {
+    background-color: rgb(148, 26, 50);
+    /* background-color: #0056b3; */
+}
+
+.map-container {
+    height: 450px; 
+    width: 600px; 
+    overflow: hidden; 
+    border-radius: 0 10px 10px 0; 
+    border: 1px solid black;
+}
+
+.property {
+    align-items: center;
+    background-color: #FFFFFF;
+    /* background-color: red; */
+    border-radius: 50%;
+    color: #263238;
+    display: flex;
+    font-size: 14px;
+    gap: 15px;
+    height: 30px;
+    justify-content: center;
+    padding: 4px;
+    position: relative;
+    position: relative;
+    transition: all 0.3s ease-out;
+    width: 30px;
+  }
+  
+  .property::after {
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 9px solid #FFFFFF;
+    content: "";
+    height: 0;
+    left: 50%;
+    position: absolute;
+    top: 95%;
+    transform: translate(-50%, 0);
+    transition: all 0.3s ease-out;
+    width: 0;
+    z-index: 1;
+  }
+  
+  .property .icon {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+  }
+  
+  .property .icon svg {
+    /* background-image: url('../assets/pizzahut-small.svg'); */
+    height: 20px;
+    width: auto;
+  }
+  
+  .property .name {
+    /* color: #9E9E9E; */
+    /* font-size: 10px; */
+    /* margin-bottom: 10px; */
+    /* margin-top: 5px; */
+  }
+  
+  .property .details {
+    display: none;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .property .address {
+    color: #9E9E9E;
+    font-size: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+
+  .property .phone {
+    color: #777777;
+    font-size: 10px;
+    /* margin-bottom: 10px; */
+    margin-top: 5px;
+  }
+  
+  .property .features {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .property .features > div {
+    align-items: center;
+    background: #F5F5F5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    display: flex;
+    font-size: 10px;
+    gap: 5px;
+    padding: 5px;
+  }
+  
+  /*
+   * Property styles in highlighted state.
+   */
+  .property.highlight {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+    height: 80px;
+    padding: 8px 15px;
+    width: auto;
+  }
+  
+  .property.highlight::after {
+    border-top: 9px solid #FFFFFF;
+  }
+  
+  .property.highlight .details {
+    display: flex;
+  }
+  
+  .property.highlight .icon svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .property .button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .property .bed {
+    color: #FFA000;
+  }
+  
+  .property .order {
+    /* color: #164b00; */
+    width: 50%;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .property .order:hover {
+    color: #ffffff;
+    background-color: #424242;
+  }
+  
+  .property .review {
+    /* color: rgb(148, 26, 50); */
+    width: 50%;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .property .review:hover {
+    color: #ffffff;
+    background-color: #424242;
+  }
+
+  
+  /*
+   * Shop icon colors.
+   */
+  .property.highlight:has(.fa-shop) .icon {
+    color: var(--shop-color);
+  }
+  
+  .property:not(.highlight):has(.fa-shop) {
+    background-color: var(--shop-color);
+  }
+  
+  .property:not(.highlight):has(.fa-shop)::after {
+    border-top: 9px solid var(--shop-color);
+  }

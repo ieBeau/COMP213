@@ -1,57 +1,100 @@
 <html lang="en">
     <!-- Created by: Pierre Moreau #301489780 - Created: 11/17/2024 -->
     <head>
-        <title>Pierre Moreau - COMP213 Home Page</title>
+        <title>Pierre Moreau | Individual Project | Home Page</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="styles.css"> 
+        <link rel="stylesheet" href="./styles/styles.css"> 
     </head>
     <body>
+
         <div id="splash-screen" class="splash-screen hidden-on-load">
-            <h1 class="fade-in">Welcome To My Website</h1>
+            <img src="./assets/pizzahut-logo-small.png" height="250px" class="splash-logo fade-in">
         </div>
+
         <div id="main-content" class="hidden">
-            <header style="justify-content: space-between;">
-                <a class="company-logo" href="https://www.pizzahut.ca/">
-                    <img src="./assets/pizzahut-logo-medium.png" height="90px">
+            <header>
+                <a class="company-logo" href="./index.html">
+                    <img src="./assets/pizzahut-logo-medium.png" height="55px">
                 </a>
                 <nav class="nav-contain-main">
-                    <a class="nav-main-link" href="./index.html">
-                        <svg xmlns="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=home" width="50" height="50" class="home-icon-select">
-                            <circle cx="25" cy="25" r="40" />
-                        </svg>
-                        <h4 class="nav-main-title">Home</h4>
-                    </a>
-                    <a class="nav-main-link" href="./pages/menu/index.html">
-                        <img src="./assets/menu.svg" height="50px" class="menu-icon">
+                    <a class="nav-main-link" href="./menu.html">
+                        <img src="./assets/menu.svg" height="35px" class="nav-icon menu-icon">
                         <h4 class="nav-main-title">Menu</h4>
                     </a>
-                    <a class="nav-main-link" href="./pages/contact/index.html">
-                        <img src="./assets/mail.svg" height="50px" class="contact-icon">
+                    <a class="nav-main-link" href="./contact_us.html">
+                        <img src="./assets/mail.svg" height="35px" class="nav-icon contact-icon">
                         <h4 class="nav-main-title">Contact Us</h4>
                     </a>
-                    <a class="nav-main-link" href="./pages/about/index.html">
-                        <img src="./assets/location.svg" height="50px" class="search-icon">
+                    <a class="nav-main-link" href="./location.html">
+                        <img src="./assets/location.svg" height="35px" class="nav-icon search-icon">
                         <h4 class="nav-main-title">Find a Restaurant</h4>
                     </a>
+                    <a class="nav-main-link" href="../">
+                        <img src="./assets/home.svg" height="35px" class="nav-icon home-icon">
+                        <h4 class="nav-main-title">Creator Home</h4>
+                    </a>
                 </nav>
-                
             </header>
             <main>
-                
-                <section>
-                    
-                </section>
-                <section>
-                    
-                </section>
-                <section></section>
-                <section></section>
+                <h1 class="story-title">Our <span class="title-text">Story</span></h1>
 
+                <section class="about-us-container">
+                    
+                    <p>
+                        <img class="about-us-img-old" src="./assets/pizzahut-old.jpg" height="200px">
+                        <h3>WHO WE ARE.</h3>
+                        There’s nothing cookie-cutter about <span class="name-text">Pizza Hut</span>. Not our pizzas. Not our people. And definitely not the way we live life. 
+                        Around here, we don’t settle for anything less than food we’re proud to serve. And we don’t just clock in. 
+                        Not when we can also become our best, make friends, and have fun while we’re at it. We’re the pizza company that lives life unboxed.
+                        
+                        <p>
+                            We’re not for people who want to blend in: pushing boundaries is part of our heritage. We have more than 16,000 restaurants and 350,000 team members in more than 100 countries. 
+                            Whether it’s the original Stuffed Crust or putting a pizza in outer space, we never stop driving ourselves to deliver hot pizzas, fast every time – anywhere you want to enjoy it.
+                        </p>
+                    </p>
+
+
+                    <h3>WHAT WE’RE ABOUT.</h3>
+                    <p>
+                        At <span class="name-text">Pizza Hut</span>, we don’t just make pizza. We make people happy. <span class="name-text">Pizza Hut</span> was built on the belief that pizza night should be special, and we carry that belief into everything we do. 
+                        With more than 60 years of experience under our belts, we understand how to best serve our customers through tried and true service principles: 
+                        We create food we’re proud to serve and deliver it fast, with a smile.
+                    </p>
+
+                    <h3>WHERE WE COME FROM.</h3>
+                    <p>
+                        <img class="about-us-img-new" src="./assets/pizzahut-food.jpg" height="250px">
+                        In 1958, two brothers borrowed $600 from their mom to open a pizza place in Wichita, Kansas. 
+                        They named it <span class="name-text">Pizza Hut</span>, because their sign only had room for eight letters. How profound!
+                    </p>
+
+                    <p>
+                        Soon, the restaurant grew. Why? The pizza was awesome. The service felt like home. And the customers were treated like family.
+                    </p>
+
+                    <p>
+                        And we’ve been delivering that same food and service ever since.
+                    </p>
+
+                    <h3>FOR THE LOVE OF PIZZA SINCE <span class="title-text">1958</span>.</h3>
+                    <p>
+                        From day one, the Carney brothers could look their customers in the eye and promise them the finest pizza in town — 
+                        because they knew the farmers who grew the ingredients, and they knew those farmers cared about quality.
+                    </p>
+
+                    <p>
+                        Since then, our farmers have grown right alongside us, and the ingredients we use are still our highest priority. 
+                        No one loves pizza more than <span class="name-text">Pizza Hut</span>. That’s why pizza is in our name — and always will be.
+                    </p>
+                </section>
             </main>
             <footer>
                 <h6 class="copyright">&copy;&nbsp;Copyright <span lang="en-ca">Fall</span> 20<span lang="en-ca">24</span>&nbsp; | &nbsp;Pierre Moreau – 301489780&nbsp; | &nbsp;COMP213 – Individual Project</h6>    
+                <h6 class="credits">Credits for images and information: 
+                    <a href="https://pizzahut.ca/"  target="_blank">Pizza Hut</a>
+                </h6>
             </footer>
         </div>
     </body>
-    <script src="scripts.js"></script>
+    <script src="./scripts/scripts.js"></script>
 </html>
