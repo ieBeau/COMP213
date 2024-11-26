@@ -1,11 +1,26 @@
 main();
 
 async function main() {
-  const restaurants = await getData();
-  
+  const data = await getData();
+  const restaurants = await createList(data);
+
+  await Promise.all(data, restaurants)
+  .then(async data => {
+    let map;
+    await initMap(map, data);
+  });
+}
+
+async function getData() {
+  const response = await fetch('./data/restaurants.json');
+  const data = await response.json();
+  return data;
+}
+
+async function createList(data) {
   const restaurantList = document.querySelector('#restaurant-container');
 
-  for (const restaurant of restaurants) {
+  for (const restaurant of data) {
     const restaurantDiv = document.createElement('div');
     restaurantDiv.classList.add('restaurant');
     restaurantDiv.innerHTML = `
@@ -23,17 +38,7 @@ async function main() {
     restaurantList.appendChild(restaurantDiv); 
   }
 
-  await Promise.all(restaurants)
-  .then(async data => {
-    let map;
-    await initMap(map, data);
-  });
-}
-
-async function getData() {
-  const response = await fetch('./data/restaurants.json');
-  const data = await response.json();
-  return data;
+  return restaurantList;
 }
 
 function searchFilter(address) {
