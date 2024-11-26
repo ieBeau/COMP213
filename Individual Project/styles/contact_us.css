@@ -274,6 +274,7 @@ section {
 
 .info .title {
     margin-top: 10px;
+    width: 100px;
 }
 
 #course-name {
