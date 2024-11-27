@@ -2,9 +2,32 @@ main();
 
 async function main() {
   const food = await getData();
+
+  let menuWidth = window.innerWidth <= 1000 ? 3 : 4;
+
+  window.addEventListener('resize', async () => {
+    const newWindowWidth = window.innerWidth;
+    const tempWidth = menuWidth;
+    
+    if (newWindowWidth <= 1000) menuWidth = 3;
+    else menuWidth = 4;
+
+    if (tempWidth !== menuWidth) {
+      updateMenu(food, menuWidth);
+    }
+  });
   
+  console.log('loading')
+  updateMenu(food, menuWidth);
+}
+
+function updateMenu(food, menuWidth) {
+  console.log('updating')
   const foodHead = document.querySelector('#food-head');
   const foodList = document.querySelector('#food-menu');
+
+  foodHead.innerHTML = '';
+  foodList.innerHTML = '';
 
   const foodCol = document.createElement('div');
   foodCol.style.marginLeft = '25px';
@@ -33,8 +56,6 @@ async function main() {
 
       type = item.type;
       counter = 0;
-      
-      // categories.push(item.type); // Add category to list
 
       foodCol.classList.add('head');
       foodCol.innerHTML = `
@@ -72,8 +93,8 @@ async function main() {
         </td>
     `;
     
-    // Add a new row every 4 items
-    if (++counter % 4 === 0 || i === food.length - 1) {
+    // Add a new row every 3-4 items
+    if (++counter % menuWidth === 0 || i === food.length - 1) {
       foodList.appendChild(foodRow.cloneNode(true));
       foodRow.innerHTML = '';
     }

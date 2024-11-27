@@ -4,8 +4,8 @@ async function main() {
   const data = await getData();
   const restaurants = await createList(data);
 
-  await Promise.all(data, restaurants)
-  .then(async data => {
+  await Promise.all([data, restaurants])
+  .then(async ([data, restaurants]) => {
     let map;
     await initMap(map, data);
   });

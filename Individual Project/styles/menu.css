@@ -1,5 +1,11 @@
 /* menu.css */
 
+.menu-container {
+    justify-content: center; 
+    margin-bottom: 50px; 
+    /* width: 900px; */
+}
+
 .food-head {
     display: flex;
     flex-direction: row;
@@ -71,4 +77,10 @@
 .food-container:hover .img-small {
     transform-origin: 75% 0%;
     transform: scale(1.5);
+}
+
+@media (max-width: 1000px) {
+    .menu-container {
+        width: 900px;
+    }
 }
