@@ -1,14 +1,7 @@
 main();
 
 async function main() {
-  const data = await getData();
-  const restaurants = await createList(data);
 
-  await Promise.all([data, restaurants])
-  .then(async ([data, restaurants]) => {
-    let map;
-    await initMap(map, data);
-  });
 }
 
 async function getData() {
@@ -84,7 +77,13 @@ function searchFilter(address) {
   }
 }
 
-async function initMap(map, restaurants) {
+let map;
+
+async function initMap() {
+  const restaurants = await getData();
+  
+  await createList(restaurants);
+
   const { Map } = await google.maps.importLibrary("maps");
   const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
