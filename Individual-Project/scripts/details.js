@@ -1,5 +1,3 @@
-main()
-
 async function main() {
   const data = await getData();
 
@@ -26,15 +24,24 @@ async function main() {
       <div class="hor-ruler"></div>
   `;
 
+  const priceContainer = document.querySelector('#price-options');
+  
+  const price = document.createElement('div');
+  price.style.display = 'flex';
+  price.style.flexDirection = 'row';
+  price.style.textAlign = 'center';
+
+  // Add serving options
   for (let i = 0; i < serving.length; i++) {
-    image.innerHTML += `
-      <div style="display: flex; flex-direction: row; margin-left: auto">
+    price.innerHTML += `
+      <div>
         <p>${serving[i].size ? `${serving[i].size}${serving[i].portion ? " | " : ""}` : ""}${serving[i].portion ? `${serving[i].portion}` : ""}</p>
         <a class="button" href="./menu.html">$${serving[i].price}</a>
       </div>
     `;
   }
 
+  priceContainer.appendChild(price.cloneNode(true));
   imageContainer.appendChild(image.cloneNode(true));
 }
 
@@ -43,3 +50,5 @@ async function getData() {
   const data = await response.json();
   return data;
 }
+
+main()

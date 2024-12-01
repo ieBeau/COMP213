@@ -166,7 +166,7 @@ footer {
     border: 0;
     height: 2px;
     width: 500px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(218, 26, 50), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(70, 70, 70), rgba(0, 0, 0, 0));
     margin: 20px 0px 20px 0px;
 }
 

@@ -17,12 +17,11 @@ async function main() {
     }
   });
   
-  console.log('loading')
   updateMenu(food, menuWidth);
 }
 
 function updateMenu(food, menuWidth) {
-  console.log('updating')
+  
   const foodHead = document.querySelector('#food-head');
   const foodList = document.querySelector('#food-menu');
 
