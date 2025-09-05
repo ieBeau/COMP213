@@ -1,19 +1,16 @@
 <div align="center">
 
-  # Web Interface Design
-  
-  All assignments and lessons are stored in this repository.  
+  <h1>Web Interface Design</h1>
+  <p>All assignments and lessons are stored in this repository.</p>
 
-  # Course Assignments
-  
-  # [Assignment 1](Assignment01)
-  # [Assignment 2](Assignment02)
-  # [Assignment 3](Assignment03)
-  # [Assignment 4](Assignment04)
-  # [Individual Project](Individual-Project)
-  
-  # Course Tests
-  
-  # [Test 1](Test01)
-  
+  <h2>Course Assignments</h2>
+  <h3><a href="Assignment01">Assignment 1</a></h3>
+  <h3><a href="Assignment02">Assignment 2</a></h3>
+  <h3><a href="Assignment03">Assignment 3</a></h3>
+  <h3><a href="Assignment04">Assignment 4</a></h3>
+  <h3><a href="Individual-Project">Individual Project</a></h3>
+
+  <h2>Course Exams</h2>
+  <h3><a href="Test01">Test 1</a></h3>
+
 </div>
